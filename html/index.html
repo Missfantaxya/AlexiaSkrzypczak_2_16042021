@@ -10,7 +10,9 @@
     <!--reset styles-->
     <link rel="stylesheet" href="../css/reset.css" />
     <!--font-->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- styles-->
     <link rel="stylesheet" href="../css/reset.css" />
 
@@ -19,23 +21,22 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="header__tittle">
-                <p><img src="../images/Reservia.svg" alt="Logo Reservia"></p>
-            </h1>
+            <p class="logo">
+                <img src="../images/Reservia.svg" alt="Logo Reservia">
+            </p>
             <a class="header__subscription" href="#">S&apos;inscrire</a>
-            <div class="header__nav">
+            <nav class="header__nav">
                 <a class="header__nav__link--active" href="#">
                     Hébergements
                 </a>
                 <a class="header__nav__link" href="#">
                     Activités
                 </a>
-            </div>
-
+            </nav>
         </header>
         <main>
-            <section class="search">
-                <h2 class="search__tittle main__section_title">Trouver votre hébergement pour des vacances de rêve</h2>
+            <article class="search">
+                <h2 class="search__tittle main__article_title">Trouver votre hébergement pour des vacances de rêve</h2>
                 <p class="search__content">En plein centre ville ou en pleine nature</p>
                 <div class="search__location">
                     <i class="fas fa-map-marker-alt search__location__logo"></i>
@@ -81,14 +82,14 @@
                         <p class="search__filters__content">Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </section>
-            </section>
-            <section class="popular">
+            </article>
+            <article class="popular">
                 <div class="popular__header">
-                    <h2 class="popular__title main__section_title">Les plus populaires</h2>
+                    <h2 class="popular__title main__article_title">Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
                 </div>
                 <div class="popular__cards">
-                    <div class="popular__card">
+                    <section class="popular__card">
                         <p>
                             <img src="../images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre verte"
                                 class="popular__card__picture">
@@ -104,8 +105,8 @@
                                 <i class="fas fa-star rate__star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="popular__card">
+                    </section>
+                    <section class="popular__card">
                         <p>
                             <img src="../images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre grise et beige"
                                 class="popular__card__picture">
@@ -122,8 +123,8 @@
                                 <i class="fas fa-star rate__star--empty"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="popular__card">
+                    </section>
+                    <section class="popular__card">
                         <p>
                             <img src="../images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre blanche et bois"
                                 class="popular__card__picture">
@@ -139,13 +140,13 @@
                                 <i class="fas fa-star rate__star--empty"></i>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
-            </section>
-            <section class="accommodation">
-                <h2 class="accommodation__title main__section_title">Hébergements à Marseille</h2>
+            </article>
+            <article class="accommodation">
+                <h2 class="accommodation__title main__article_title">Hébergements à Marseille</h2>
                 <div class="accommodation__cards">
-                    <div class="accommodation__card">
+                    <section class="accommodation__card">
                         <p>
                             <img src="../images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre avec lit superposé"
                                 class="accommodation__card__picture">
@@ -161,8 +162,8 @@
                                 <i class="fas fa-star rate__star--empty"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="accommodation__card">
+                    </section>
+                    <section class="accommodation__card">
                         <p>
                             <img src="../images/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                 alt="chambre grise avec lit simple" class="accommodation__card__picture">
@@ -178,8 +179,8 @@
                                 <i class="fas fa-star rate__star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="accommodation__card">
+                    </section>
+                    <section class="accommodation__card">
                         <p>
                             <img src="../images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre avec placard"
                                 class="accommodation__card__picture">
@@ -195,8 +196,8 @@
                                 <i class="fas fa-star rate__star--empty"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="accommodation__card">
+                    </section>
+                    <section class="accommodation__card">
                         <p>
                             <img src="../images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre thème maritime"
                                 class="accommodation__card__picture">
@@ -212,8 +213,8 @@
                                 <i class="fas fa-star rate__star--empty"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="accommodation__card">
+                    </section>
+                    <section class="accommodation__card">
                         <p>
                             <img src="../images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                 alt="chambre avec lits superposés rustique" class="accommodation__card__picture">
@@ -229,8 +230,8 @@
                                 <i class="fas fa-star rate__star--empty"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="accommodation__card">
+                    </section>
+                    <section class="accommodation__card">
                         <p>
                             <img src="../images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre avec bureau"
                                 class="accommodation__card__picture">
@@ -246,27 +247,27 @@
                                 <i class="fas fa-star rate__star"></i>
                             </div>
                         </div>
-                    </div>
+                    </section>
                     <a href="#">Afficher plus</a>
                 </div>
-            </section>
-            <section class="activities">
-                <h2 class="activities__title main__section_title">Activités à Marseille</h2>
+            </article>
+            <article class="activities">
+                <h2 class="activities__title main__article_title">Activités à Marseille</h2>
                 <div class="activities__cards">
-                    <div class="activities__card">
+                    <section class="activities__card">
                         <p>
                             <img src="../images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port de Marseille"
                                 class="activities__card__picture">
                         </p>
                         <h4 class="activities__card__title">Vieux port</h4>
-                    </div>
-                    <div class="activities__card">
+                    </section>
+                    <section class="activities__card">
                         <p>
                             <img src="../images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomègues"
                                 class="activities__card__picture">
                         </p>
                         <h4 class="activities__card__title">Fort de Pomègues</h4>
-                    </div>
+                    </section>
                     <div class="activities__card">
                         <p>
                             <img src="./images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="un île du frioul"
@@ -274,47 +275,53 @@
                         </p>
                         <h4 class="activities__card__title">&Icirc;les du Frioul</h4>
                     </div>
-                    <div class="activities__card">
+                    <section class="activities__card">
                         <p>
                             <img src="../images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="vue d'une calanque"
                                 class="activities__card__picture">
                         </p>
                         <h4 class="activities__card__title">Parc National des Calanques</h4>
-                    </div>
-                    <div class="activities__card">
+                    </section>
+                    <section class="activities__card">
                         <p>
                             <img src="../images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                                 alt="Notre-Dame-de-la-Garde et sa colline" class="activities__card__picture">
                         </p>
                         <h4 class="activities__card__title">Notre-Dame-de-la-Garde</h4>
-                    </div>
-                    <div class="activities__card">
+                    </section>
+                    <section class="activities__card">
                         <p>
                             <img src="../images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="monument du parc longchamp"
                                 class="activities__card__picture">
                         </p>
                         <h4 class="activities__card__title">Parc Longchamp</h4>
-                    </div>
+                    </section>
                 </div>
-            </section>
+            </article>
         </main>
         <footer>
-            <section>
+            <article>
                 <h2>A propos</h2>
-                <a href="#">Fonctionnement du site</a>
-                <a href="#">Conditions générales de vente</a>
-                <a href="#">Données et confidentialité</a>
-            </section>
-            <section>
+                <nav>
+                    <a href="#">Fonctionnement du site</a>
+                    <a href="#">Conditions générales de vente</a>
+                    <a href="#">Données et confidentialité</a>
+                </nav>
+            </article>
+            <article>
                 <h2>Nos hébergements</h2>
-                <a href="#">Charte qualité</a>
-                <a href="#">Soumettre votre hôtel</a>
-            </section>
-            <section>
+                <nav>
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Soumettre votre hôtel</a>
+                </nav>
+            </article>
+            <article>
                 <h2>Assistance</h2>
-                <a href="#">Centre d'aide</a>
-                <a href="#">Nous contacter</a>
-            </section>
+                <nav>
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Nous contacter</a>
+                </nav>
+            </article>
         </footer>
     </div>
 </body>
