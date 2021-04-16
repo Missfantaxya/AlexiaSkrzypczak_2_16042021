@@ -10,33 +10,117 @@
 </head>
 
 <body>
-    <header>
-        <h1>Reservia</h1>
-        <a href="#">S&apos;inscrire</a>
-        <div>
-            <a href="#">
+    <header class="header">
+        <h1 class="header__tittle">Reservia</h1>
+        <a class="header__subscription" href="#">S&apos;inscrire</a>
+        <div class="header__nav">
+            <a class="header__nav__link--active" href="#">
                 Hébergements
             </a>
-            <a href="#">
+            <a class="header__nav__link" href="#">
                 Activités
             </a>
         </div>
 
     </header>
     <main>
-        <section>
-            <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre ville ou en pleine nature</p>
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
+        <section class="search">
+            <h2 class="search__tittle">Trouver votre hébergement pour des vacances de rêve</h2>
+            <p class="search__content">En plein centre ville ou en pleine nature</p>
+            <div class="search__location">
+                <i class="fas fa-map-marker-alt search__location__logo"></i>
                 <div>
-                    <input type="text" id="location" name="city" required>
-                    <button><i class=" fas fa-search"></i></button>
+                    <input type="text" id="location" class="search__location__input" name="city" required>
+                    <button class="search__location__button">
+                        <i class=" fas fa-search"></i>
+                    </button>
                 </div>
             </div>
+            <section class="search__filters">
+                <h3 class="search__filters__title">Filtres</h3>
+                <div class="search__filters__choice">
+                    <div class="search__filters__category">
+                        <button id="economic" class="search__filters__button">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </button>
+                        <label for="economic">&Eacute;conomique</label>
+                    </div>
+                    <div class="search__filters__category">
+                        <button id="family" class="search__filters__button">
+                            <i class="fas fa-child"></i>
+                        </button>
+                        <label for="family">Familial</label>
+                    </div>
+                    <div class="search__filters__category">
+                        <button id="romantic" class="search__filters__button">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <label for="romantic">Romantique</label>
+                    </div>
+                    <div class="search__filters__category">
+                        <button id="pets" class="search__filters__button">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <label for="pets">Animaux autorisés</label>
+                    </div>
+                </div>
+                <div class="search__filters__info">
+                    <div class="search__filters__info__logo">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    <p class="search__filters__content">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
         </section>
-        <section>
-            <h2>Les plus populaires</h2>
+        <section class="popular">
+            <div class="popular__header">
+                <h2 class="popular__title">Les plus populaires</h2>
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="popular__cards">
+                <div class="popular__card">
+                    <div class="popular__card__picture"></div>
+                    <div class="popular__card__content">
+                        <h4 class="popular__card__title">H&ocirc;tel Le soleil du matin</h4>
+                        <p class="popular__card__price">Nuit à partir de 128&euro;</p>
+                        <div class="popular__card__rate">
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__card">
+                    <div class="popular__card__picture"></div>
+                    <div class="popular__card__content">
+                        <h4 class="popular__card__title">Au c&oelig;ur de l&apos;eau Chambres d&apos;h&ocirc;tes</h4>
+                        <p class="popular__card__price">Nuit à partir de 71&euro;</p>
+                        <div class="popular__card__rate">
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star--empty"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__card">
+                    <div class="popular__card__picture"></div>
+                    <div class="popular__card__content">
+                        <h4 class="popular__card__title">H&ocirc;tel Tout bleu et Blanc</h4>
+                        <p class="popular__card__price">Nuit à partir de 68&euro;</p>
+                        <div class="popular__card__rate">
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star"></i>
+                            <i class="fas fa-star rate__star--empty"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Hébergement à Marseille</h2>
