@@ -4,16 +4,18 @@ body {
     font-size: 0.9rem;
 }
 
+/* ----HEADER---- */
+
 header {
     margin-bottom: 1rem;
 }
 
 .header__top {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  margin: 1rem;
-  align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 1rem;
+    align-items: center;
 }
 
 .header__subscription{
@@ -21,6 +23,8 @@ header {
     color: #0065FC;
     font-weight: 800;
 }
+
+/* navigation */
 
 .header__nav {
     display: flex;
@@ -39,20 +43,50 @@ header {
     border-bottom: 3px solid #0065FC;
     color: #0065FC;
 }
+
 .anchor--activities {
     margin-left: 1px;
     border-bottom: 3px solid #F2F2F2;
 }
 
+/* ----MAIN---- */
+
 .main__article {
-    margin: 1rem;
+    margin: 1rem 1rem;
+    padding: 1.2rem 0;
 }
 
 .main__article__title {
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 800;
+    font-size: 1.3rem;
     padding: 0.75rem 0;
 }
+
+.main__cards{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+}
+
+.main__card {
+    background-color: white;
+    border-radius: 20px;
+    margin: 0.3rem auto;
+}
+
+.main__card__picture {
+    overflow: hidden;
+}
+
+.rate__star{
+    color: #0065FC;
+}
+
+.rate__star--empty{
+    color: #F2F2F2;
+}
+
+/* search bar */
 
 .search__location {
     display: flex;
@@ -82,6 +116,13 @@ header {
     border-bottom: 1px solid #F2F2F2;
     height: 3rem;
     width: auto;
+    padding-right: 3rem;
+}
+
+.search__location__input::placeholder {
+    font-weight: 700;
+    font-size:large;
+    color:black;
 }
 
 .search__location__button {
@@ -93,6 +134,8 @@ header {
     border-radius: 8px;
 }
 
+/* filters of search */
+
 .search__filters {
     margin: 1rem 0;
 }
@@ -102,17 +145,21 @@ header {
     font-weight: 700;
 }
 
-.search__filters__choice {
+.search__filters__choices {
     display: flex;
     flex-flow: row wrap;
+    margin-left: 0.5rem;
 }
 
 .search__filters__category {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    height: 3rem;
     border-radius: 50px;
     border: 2px solid #F2F2F2;
+    border-left: none;
+    margin: 0.5rem;
 }
 
 .search__filters__button {
@@ -125,16 +172,103 @@ header {
 }
 
 .search__filters__label {
-    padding: 0.5rem;
+    padding: 0.5rem 0.85rem 0.5rem 0.7rem;
     font-weight: 700;
 }
+
+/* info of search */
+
+.search__info {
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+}
+
+/* TODO placer le i sur la première ligne quand info__content passe en multi-lignes */
+.search__info__icon{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.search__info__logo{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+    color: #0065FC;
+}
+
+.search__info__content {
+    width: 80%;
+}
+
+/* article POPULAR */
+
+.wrapper__grey {
+    background-color:#F2F2F2;
+}
+
+.popular__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* popular cards */
+
+.popular__card{
+    display:flex;
+    flex-flow: row nowrap;
+    padding: 0.25rem;
+    width: 21rem;
+    height: 10 rem;
+}
+
 .popular__card__picture {
-    width:40%;
-    object-fit: cover;
+    width:8rem;
+    height: 8.5rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.popular__picture {
-    width: 100%;
+.popular__picture--1 {
+    width: 170%;
 }
+
+.popular__picture--2 {
+    width: 150%;
+}
+.popular__picture--3{
+    width: 109%;
+}
+
+.popular__card__content {
+    width: 55%;
+
+}
+
+.popular__card__title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0.75rem 0;;
+}
+
+.popular__card__rate {
+    margin-top: 3rem;
+}
+
+/* article ACCOMMODATION */
 
 .accommodation__card__picture {
     width:100%;
@@ -144,14 +278,18 @@ header {
     width: 100%;
 }
 
+/* article ACTIVITIES */
+
 .activities__card__picture {
     width:100%;
     object-fit: contain;
 }
 .activities__picture {
     width: 100%;
+    
 }
 
+/* ----FOOTER---- */
 
 footer {
     background-color: #F2F2F2;
