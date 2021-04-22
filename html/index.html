@@ -14,83 +14,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- styles-->
-    <link rel="stylesheet" href="../css/reset.css" / </head>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <p class="logo">
-                <img src="../images/Reservia.svg" alt="Logo Reservia">
+    <header class="header">
+        <div class="header__top">
+            <p class="header__logo">
+                <img src="../images/Reservia.svg" alt="logo Reservia">
             </p>
             <a class="header__subscription" href="#">S&apos;inscrire</a>
-            <nav class="header__nav">
-                <a class="header__nav__link--active" href="#accommodation">
-                    Hébergements
-                </a>
-                <a class="header__nav__link" href="#activities">
-                    Activités
-                </a>
-            </nav>
-        </header>
-        <main>
-            <article class="search">
-                <h2 class="search__tittle main__article_title">Trouver votre hébergement pour des vacances de rêve</h2>
+        </div>
+        <nav class="header__nav">
+            <a class="header__nav__link--active anchor--accommodation" href="#accommodation">
+                Hébergements
+            </a>
+            <a class="header__nav__link anchor--activities" href="#activities">
+                Activités
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <article class="main__article search">
+                <h2 class="search__tittle main__article__title">Trouver votre hébergement pour des vacances de rêve
+                </h2>
                 <p class="search__content">En plein centre ville ou en pleine nature</p>
                 <div class="search__location">
-                    <i class="fas fa-map-marker-alt search__location__logo"></i>
-                    <div>
-                        <input type="text" id="location" class="search__location__input" name="city" required>
-                        <button class="search__location__button">
-                            <i class=" fas fa-search"></i>
-                        </button>
-                    </div>
+                    <button class="search__location__logo">
+                        <i class="fas fa-map-marker-alt "></i>
+                    </button>
+                    <input type="text" id="location" class="search__location__input" name="city" required
+                        value="Marseille, France">
+                    <button class="search__location__button">
+                        <i class=" fas fa-search"></i>
+                    </button>
                 </div>
                 <section class="search__filters">
                     <h3 class="search__filters__title">Filtres</h3>
                     <div class="search__filters__choice">
                         <div class="search__filters__category">
-                            <button id="economic" class="search__filters__button">
+                            <button class="search__filters__button id=" economic" class="search__filters__button">
                                 <i class="fas fa-money-bill-wave"></i>
                             </button>
-                            <label for="economic">&Eacute;conomique</label>
+                            <label class="search__filters__label" for="economic">&Eacute;conomique</label>
                         </div>
                         <div class="search__filters__category">
                             <button id="family" class="search__filters__button">
                                 <i class="fas fa-child"></i>
                             </button>
-                            <label for="family">Familial</label>
+                            <label class="search__filters__label" for=" family">Familial</label>
                         </div>
                         <div class="search__filters__category">
                             <button id="romantic" class="search__filters__button">
                                 <i class="fas fa-heart"></i>
                             </button>
-                            <label for="romantic">Romantique</label>
+                            <label class="search__filters__label" for="romantic">Romantique</label>
                         </div>
                         <div class="search__filters__category">
                             <button id="pets" class="search__filters__button">
-                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-dog"></i>
                             </button>
-                            <label for="pets">Animaux autorisés</label>
+                            <label class="search__filters__label" for=" pets">Animaux autorisés</label>
                         </div>
                     </div>
                     <div class="search__filters__info">
                         <div class="search__filters__info__logo">
                             <i class="fas fa-info"></i>
                         </div>
-                        <p class="search__filters__content">Plus de 500 logements sont disponibles dans cette ville</p>
+                        <p class="search__filters__content">Plus de 500 logements sont disponibles dans cette ville
+                        </p>
                     </div>
                 </section>
             </article>
-            <article class="popular">
+        </div>
+        <div class="wrapper__grey">
+            <article class="main__article">
                 <div class="popular__header">
-                    <h2 class="popular__title main__article_title">Les plus populaires</h2>
+                    <h2 class="popular__title main__article__title">Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
                 </div>
                 <div class="popular__cards">
                     <section class="popular__card">
-                        <p>
+                        <p class="popular__card__picture">
                             <img src="../images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre verte"
-                                class="popular__card__picture">
+                                class="popular__picture">
                         </p>
                         <div class="popular__card__content">
                             <h4 class="popular__card__title">H&ocirc;tel Le soleil du matin</h4>
@@ -105,9 +113,9 @@
                         </div>
                     </section>
                     <section class="popular__card">
-                        <p>
+                        <p class="popular__card__picture">
                             <img src="../images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre grise et beige"
-                                class="popular__card__picture">
+                                class="popular__picture">
                         </p>
                         <div class="popular__card__content">
                             <h4 class="popular__card__title">Au c&oelig;ur de l&apos;eau Chambres d&apos;h&ocirc;tes
@@ -123,9 +131,9 @@
                         </div>
                     </section>
                     <section class="popular__card">
-                        <p>
+                        <p class="popular__card__picture">
                             <img src="../images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre blanche et bois"
-                                class="popular__card__picture">
+                                class="popular__picture">
                         </p>
                         <div class="popular__card__content">
                             <h4 class="popular__card__title">H&ocirc;tel Tout bleu et Blanc</h4>
@@ -141,13 +149,15 @@
                     </section>
                 </div>
             </article>
-            <article id="accommodation" class="accommodation">
-                <h2 class="accommodation__title main__article_title">Hébergements à Marseille</h2>
+        </div>
+        <div class="wrapper">
+            <article id="accommodation" class="main__article accommodation">
+                <h2 class="accommodation__title main__article__title">Hébergements à Marseille</h2>
                 <div class="accommodation__cards">
                     <section class="accommodation__card">
-                        <p>
+                        <p class="accommodation__card__picture">
                             <img src="../images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre avec lit superposé"
-                                class="accommodation__card__picture">
+                                class="accommodation__picture">
                         </p>
                         <div class="accommodation__card__content">
                             <h4 class="accommodation__card__title">Auberge la Cannebière</h4>
@@ -162,9 +172,9 @@
                         </div>
                     </section>
                     <section class="accommodation__card">
-                        <p>
+                        <p class="accommodation__card__picture">
                             <img src="../images/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                                alt="chambre grise avec lit simple" class="accommodation__card__picture">
+                                alt="chambre grise avec lit simple" class="accommodation__picture">
                         </p>
                         <div class="accommodation__card__content">
                             <h4 class="accommodation__card__title">H&ocirc;tel du port</h4>
@@ -179,9 +189,9 @@
                         </div>
                     </section>
                     <section class="accommodation__card">
-                        <p>
+                        <p class="accommodation__card__picture">
                             <img src="../images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre avec placard"
-                                class="accommodation__card__picture">
+                                class="accommodation__picture">
                         </p>
                         <div class="accommodation__card__content">
                             <h4 class="accommodation__card__title">H&ocirc;tel Les mouettes</h4>
@@ -196,9 +206,9 @@
                         </div>
                     </section>
                     <section class="accommodation__card">
-                        <p>
+                        <p class="accommodation__card__picture">
                             <img src="../images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre thème maritime"
-                                class="accommodation__card__picture">
+                                class="accommodation__picture">
                         </p>
                         <div class="accommodation__card__content">
                             <h4 class="accommodation__card__title">H&ocirc;tel de la mer</h4>
@@ -213,9 +223,9 @@
                         </div>
                     </section>
                     <section class="accommodation__card">
-                        <p>
+                        <p class="accommodation__card__picture">
                             <img src="../images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                                alt="chambre avec lits superposés rustique" class="accommodation__card__picture">
+                                alt="chambre avec lits superposés rustique" class="accommodation__picture">
                         </p>
                         <div class="accommodation__card__content">
                             <h4 class="accommodation__card__title">Auberge Le panier</h4>
@@ -230,9 +240,9 @@
                         </div>
                     </section>
                     <section class="accommodation__card">
-                        <p>
+                        <p class="accommodation__card__picture">
                             <img src="../images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre avec bureau"
-                                class="accommodation__card__picture">
+                                class="accommodation__picture">
                         </p>
                         <div class="accommodation__card__content">
                             <h4 class="accommodation__card__title">H&ocirc;tel chez Amina</h4>
@@ -249,13 +259,15 @@
                     <a href="#">Afficher plus</a>
                 </div>
             </article>
-            <article id="activities" class="activities">
-                <h2 class="activities__title main__article_title">Activités à Marseille</h2>
+        </div>
+        <div class="wrapper">
+            <article id="activities" class="main__article activities">
+                <h2 class="activities__title main__article__title">Activités à Marseille</h2>
                 <div class="activities__cards">
                     <section class="activities__card">
-                        <p>
+                        <p class="activities__card__picture">
                             <img src="../images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port de Marseille"
-                                class="activities__card__picture">
+                                class="activities__picture">
                         </p>
                         <h4 class="activities__card__title">Vieux port</h4>
                     </section>
@@ -267,61 +279,63 @@
                         <h4 class="activities__card__title">Fort de Pomègues</h4>
                     </section>
                     <div class="activities__card">
-                        <p>
-                            <img src="./images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="un île du frioul"
-                                class="activities__card__picture">
+                        <p class="activities__card__picture"></p>>
+                        <img src="./images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="un île du frioul"
+                            class="activities__picture">
                         </p>
                         <h4 class="activities__card__title">&Icirc;les du Frioul</h4>
                     </div>
                     <section class="activities__card">
-                        <p>
-                            <img src="../images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="vue d'une calanque"
-                                class="activities__card__picture">
+                        <p class="activities__card__picture"></p>>
+                        <img src="../images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="vue d'une calanque"
+                            class="activities__picture">
                         </p>
                         <h4 class="activities__card__title">Parc National des Calanques</h4>
                     </section>
                     <section class="activities__card">
-                        <p>
-                            <img src="../images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                alt="Notre-Dame-de-la-Garde et sa colline" class="activities__card__picture">
+                        <p class="activities__card__picture"></p>>
+                        <img src="../images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            alt="Notre-Dame-de-la-Garde et sa colline" class="activities__picture">
                         </p>
                         <h4 class="activities__card__title">Notre-Dame-de-la-Garde</h4>
                     </section>
                     <section class="activities__card">
-                        <p>
-                            <img src="../images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="monument du parc longchamp"
-                                class="activities__card__picture">
+                        <p class="activities__card__picture"></p>>
+                        <img src="../images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="monument du parc longchamp"
+                            class="activities__picture">
                         </p>
                         <h4 class="activities__card__title">Parc Longchamp</h4>
                     </section>
                 </div>
             </article>
-        </main>
-        <footer>
-            <article>
-                <h2>A propos</h2>
-                <nav>
-                    <a href="#">Fonctionnement du site</a>
-                    <a href="#">Conditions générales de vente</a>
-                    <a href="#">Données et confidentialité</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__wrapper">
+            <article class="footer__article">
+                <h2 class="footer__title">A propos</h2>
+                <nav class="footer__nav">
+                    <a class="footer__link" href="#">Fonctionnement du site</a>
+                    <a class="footer__link" href="#">Conditions générales de vente</a>
+                    <a class="footer__link" href="#">Données et confidentialité</a>
                 </nav>
             </article>
-            <article>
-                <h2>Nos hébergements</h2>
-                <nav>
-                    <a href="#">Charte qualité</a>
-                    <a href="#">Soumettre votre hôtel</a>
+            <article class="footer__article">
+                <h2 class="footer__title">Nos hébergements</h2>
+                <nav class="footer__nav">
+                    <a class="footer__link" href="#">Charte qualité</a>
+                    <a class="footer__link" href="#">Soumettre votre hôtel</a>
                 </nav>
             </article>
-            <article>
-                <h2>Assistance</h2>
-                <nav>
-                    <a href="#">Centre d'aide</a>
-                    <a href="#">Nous contacter</a>
+            <article class="footer__article">
+                <h2 class="footer__title">Assistance</h2>
+                <nav class="footer__nav">
+                    <a class="footer__link" href="#">Centre d'aide</a>
+                    <a class="footer__link" href="#">Nous contacter</a>
                 </nav>
             </article>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
