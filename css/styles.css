@@ -310,14 +310,36 @@ header {
     padding: 0.5rem 0;
 }
 
+.accommodation__more {
+    font-weight: 800;
+    margin: 1.7rem 0 0.4rem 0.5rem;
+    font-size: 1.2rem;
+}
+
 /* article ACTIVITIES */
+.accommodation__card {
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
+    height: 12.5rem;
+    padding:0.25rem;
+}
+
 
 .activities__card__picture {
     width:100%;
-    object-fit: contain;
+    height: 8rem;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .activities__picture {
     width: 100%;
+    object-position: 50% -20% ;
+}
+
+.activities__card__title {
+    padding: 1.5rem 0.75rem;
 }
 
 /* ----FOOTER---- */
