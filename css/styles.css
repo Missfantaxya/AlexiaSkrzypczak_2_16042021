@@ -79,12 +79,22 @@ header {
     overflow: hidden;
 }
 
+.card__title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0.75rem 0;;
+}
+
 .rate__star{
     color: #0065FC;
 }
 
 .rate__star--empty{
     color: #F2F2F2;
+}
+
+.bold {
+    font-weight: 800;
 }
 
 /* search bar */
@@ -258,12 +268,6 @@ header {
 
 }
 
-.popular__card__title {
-    font-size: 1rem;
-    font-weight: 800;
-    margin: 0.75rem 0;;
-}
-
 .popular__card__rate {
     margin-top: 3rem;
 }
@@ -301,7 +305,6 @@ header {
 }
 .activities__picture {
     width: 100%;
-    
 }
 
 /* ----FOOTER---- */
