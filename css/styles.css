@@ -32,7 +32,7 @@ header {
     justify-content: space-around;
 }
 
-.header__nav > a {
+.nav__link {
     width: 50%;
     text-align: center;
     padding: 0.8rem;
@@ -106,7 +106,8 @@ header {
     border: 1px solid #F2F2F2;
     border-radius: 8px;
     height: 3rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    width: 21rem;
 }
 
 .search__location__logo {
@@ -233,7 +234,6 @@ header {
     flex-flow: row nowrap;
     padding: 0.25rem;
     width: 21rem;
-    height: 10rem;
 }
 
 .popular__card__picture {
