@@ -317,14 +317,14 @@ header {
 }
 
 /* article ACTIVITIES */
-.accommodation__card {
+
+.activities__card {
     display: flex;
     flex-direction: column;
     width: 21rem;
     height: 12.5rem;
     padding:0.25rem;
 }
-
 
 .activities__card__picture {
     width:100%;
