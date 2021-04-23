@@ -1,13 +1,13 @@
 body {
     width: 100vw;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 /* ----HEADER---- */
 
 .header {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .header__top {
@@ -94,8 +94,8 @@ body {
 
 .main__article__title {
     font-weight: 800;
-    font-size: 1.3rem;
-    padding: 0.75rem 0;
+    font-size: 1.3em;
+    padding: 0.75em 0;
 }
 
 .main__cards{
@@ -116,7 +116,6 @@ body {
 }
 
 .card__title {
-    font-size: 1rem;
     font-weight: 800;
 }
 
@@ -131,6 +130,23 @@ body {
 .bold {
     font-weight: 800;
 }
+
+/* ----search bar view mobile only---- */
+
+@media screen and (max-width: 989px) {
+    .card__title{
+        font-size: 5vw;
+    }
+}
+
+/* ----MAIN view desktop only----*/
+
+@media screen and (min-width: 990px) {
+    .card__title{
+        font-size: 1.3vw;
+    }
+}
+
 
 /* search bar */
 
@@ -289,21 +305,30 @@ body {
     align-items: center;
 }
 
+/* ----popular filters view desktop only----*/
+
+@media screen and (min-width: 990px) {
+    .wrapper__grey {
+        width: 30%;
+        border-radius: 20px;
+    }
+}
+
 /* popular cards */
 
 .popular__card{
     display:flex;
     flex-flow: row nowrap;
-    padding: 0.25rem;
-    width: 21rem;
+    padding: 0.25em;
+    width: 95%;
 }
 
 .popular__card__picture {
-    width:8rem;
-    height: 8.5rem;
+    width: 40%;
+    height: 20vh;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    margin-right: 1rem;
+    margin-right: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,7 +339,7 @@ body {
 .popular__picture--2 {
     width: 150%;
 }
-.popular__picture--3{
+.popular__picture--3 {
     width: 109%;
 }
 
@@ -323,12 +348,17 @@ body {
 }
 
 .popular__card__title {
-    margin: 0.75rem 0;
+    margin: 0.75em 0;
 }
 
 .popular__card__rate {
-    padding: 2.5rem 0 0.5rem 0;
+    padding: 2.5em 0 0.5em 0;
+}
 
+@media screen and (min-width: 990px) {
+    .popular__card__picture {
+        height: 30vh;
+    }
 }
 
 /* article ACCOMMODATION */
