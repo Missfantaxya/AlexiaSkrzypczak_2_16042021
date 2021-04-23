@@ -72,7 +72,7 @@ header {
     background-color: white;
     border-radius: 20px;
     margin: 0.3rem auto;
-    box-shadow: 5px 5px 6px #F2F2F2;
+    box-shadow: 5px 5px 6px #F2F2F2, -5px -5px 6px #F2F2F2;
 }
 
 .main__card__picture {
@@ -82,7 +82,7 @@ header {
 .card__title {
     font-size: 1rem;
     font-weight: 800;
-    margin: 0.75rem 0;;
+    margin: 0.75rem 0;
 }
 
 .rate__star{
@@ -255,7 +255,6 @@ header {
 .popular__picture--1 {
     width: 170%;
 }
-
 .popular__picture--2 {
     width: 150%;
 }
@@ -265,11 +264,11 @@ header {
 
 .popular__card__content {
     width: 55%;
-
 }
 
 .popular__card__rate {
-    margin-top: 3rem;
+    padding: 2.5rem 0 0.5rem 0;
+
 }
 
 /* article ACCOMMODATION */
@@ -279,7 +278,7 @@ header {
     flex-direction: column;
     width: 21rem;
     height: 12rem;
-    
+    padding:0.25rem;
 }
 
 .accommodation__card__picture {
