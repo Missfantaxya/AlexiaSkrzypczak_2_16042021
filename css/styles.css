@@ -180,7 +180,7 @@ body {
     border-radius: 8px;
 }
 
-/* ----search view mobile only---- */
+/* ----search bar view mobile only---- */
 
 @media screen and (max-width: 989px) {
     .search__location {
@@ -188,7 +188,7 @@ body {
     }
 }
 
-/* ----search view desktop only----*/
+/* ----search bar view desktop only----*/
 
 @media screen and (min-width: 990px) {
     .search__location {
@@ -236,6 +236,17 @@ body {
 .search__filters__label {
     padding: 0.5rem 0.85rem 0.5rem 0.7rem;
     font-weight: 700;
+}
+
+/* ----search filters view desktop only----*/
+
+@media screen and (min-width: 990px) {
+    .search__filters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
 }
 
 /* info of search */
