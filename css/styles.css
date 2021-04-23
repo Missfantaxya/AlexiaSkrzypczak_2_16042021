@@ -295,6 +295,13 @@ header {
     width: 103%;
 }
 
+.accommodation__card__content {
+    padding: 0 0.5rem;
+}
+
+.accommodation__card__rate {
+    padding: 0.75rem 0;
+}
 
 /* article ACTIVITIES */
 
