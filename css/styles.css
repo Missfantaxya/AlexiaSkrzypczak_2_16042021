@@ -72,6 +72,7 @@ header {
     background-color: white;
     border-radius: 20px;
     margin: 0.3rem auto;
+    box-shadow: 5px 5px 6px #F2F2F2;
 }
 
 .main__card__picture {
@@ -240,7 +241,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .popular__picture--1 {
     width: 170%;
@@ -270,13 +270,28 @@ header {
 
 /* article ACCOMMODATION */
 
+.accommodation__card {
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
+    height: 12rem;
+    
+}
+
 .accommodation__card__picture {
     width:100%;
-    object-fit: contain;
+    height: 7rem;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .accommodation__picture {
-    width: 100%;
+    width: 103%;
 }
+
 
 /* article ACTIVITIES */
 
