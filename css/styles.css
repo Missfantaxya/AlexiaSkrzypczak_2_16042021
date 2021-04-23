@@ -191,15 +191,7 @@ header {
 .search__info {
     display: flex;
     flex-flow: row no-wrap;
-    align-items: center;
-}
-
-/* TODO placer le i sur la première ligne quand info__content passe en multi-lignes */
-.search__info__icon{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100%;
+    align-items: start;
 }
 
 .search__info__logo{
@@ -210,12 +202,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: start;
     margin: 0 0.5rem;
     color: #0065FC;
 }
 
 .search__info__content {
     width: 80%;
+    padding-top: 0.25rem;
 }
 
 /* article POPULAR */
