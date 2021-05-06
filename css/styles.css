@@ -306,9 +306,8 @@ body {
 }
 
 /* ----popular filters view desktop only----*/
-
 @media screen and (min-width: 990px) {
-    .wrapper__grey {
+    .wrapper__popular {
         width: 30%;
         border-radius: 20px;
     }
@@ -355,9 +354,10 @@ body {
     padding: 2.5em 0 0.5em 0;
 }
 
+/* ----popular card picture view desktop only----*/
 @media screen and (min-width: 990px) {
     .popular__card__picture {
-        height: 30vh;
+        height: 15vh;
     }
 }
 
