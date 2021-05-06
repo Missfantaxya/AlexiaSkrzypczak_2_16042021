@@ -458,6 +458,7 @@ footer {
 .footer__wrapper {
     margin: 0 1rem;
     padding: 1rem 0.25rem;
+
 }
 
 .footer__article {
@@ -475,4 +476,21 @@ footer {
 
 .footer__link {
     padding: 0.25rem 0;
+}
+
+/* ----footer view desktop only----*/
+
+@media screen and (min-width: 990px) {
+    .footer__wrapper {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .footer__article {
+        margin: 1rem 
+    }
+    .footer__article:nth-child(2), 
+    .footer__article:nth-child(3) {
+        margin-left: 11rem 
+    }
 }
