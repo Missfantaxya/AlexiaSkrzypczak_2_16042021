@@ -380,8 +380,8 @@ body {
 .accommodation__card {
     display: flex;
     flex-direction: column;
-    width: 21rem;
-    height: 12.5rem;
+    width: 90vw;
+    height: 30vh;
     padding:0.25rem;
 }
 
