@@ -73,7 +73,6 @@ body {
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
-        margin: 1rem 0;
     }
     .nav__link {
         border-bottom: none;
