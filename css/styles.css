@@ -425,12 +425,14 @@ body {
         border-radius: 12px;
         width: 66%;
     }
-    .accommodation__group {
+    .accommodation__cards {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
     }
     .accommodation__card{
-        width: 35%;
+        flex-basis: 30%;
         height: 14vw;
         margin: 0.5rem;
     }
