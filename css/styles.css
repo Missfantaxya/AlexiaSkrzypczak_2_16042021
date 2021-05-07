@@ -3,7 +3,7 @@ body {
     font-size: 0.9em;
 }
 
-/* ----HEADER---- */
+/* ----HEADER---------------------------- */
 
 .header {
     margin-bottom: 1em;
@@ -24,7 +24,7 @@ body {
     font-weight: 800;
 }
 
-/* navigation */
+/* navigation==================== */
 
 .header__nav {
     display: flex;
@@ -46,7 +46,7 @@ body {
     color: #0065FC;
 }
 
-/* ----nav view mobile only---- */
+/* *----nav view mobile only---- */
 @media screen and (max-width: 989px) {
     .header__nav {
         width:100%;
@@ -54,13 +54,13 @@ body {
 }
 
 
-/* ----nav view desktop only----*/
-
+/* &----nav view desktop only----*/
 @media screen and (min-width: 990px) {
     .header {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 3fr 2fr 1fr;
+        margin: 0 1rem;
     }
     .header__top {
         grid-column-start: 1;
@@ -84,7 +84,7 @@ body {
     }
 }
 
-/* ----MAIN---- */
+/* ----MAIN------------------------------------------- */
 
 .main__article {
     margin: 1rem 1rem;
@@ -110,7 +110,6 @@ body {
     box-shadow: 5px 5px 6px #F2F2F2, -5px -5px 6px #F2F2F2;
 }
 
-
 .main__card__picture {
     overflow: hidden;
 }
@@ -131,22 +130,24 @@ body {
     font-weight: 800;
 }
 
-/* ----search bar view mobile only---- */
+/* *----search bar view mobile only---- */
 @media screen and (max-width: 989px) {
     .card__title{
         font-size: 5vw;
     }
 }
 
-/* ----MAIN view desktop only----*/
+/* &----main view desktop only----*/
 @media screen and (min-width: 990px) {
+    main {
+        padding: 0 1rem;
+    }
     .card__title{
         font-size: 1.3vw;
     }
 }
 
-
-/* search bar */
+/* search bar======================== */
 
 .search__location {
     display: flex;
@@ -194,21 +195,21 @@ body {
     border-radius: 8px;
 }
 
-/* ----search bar view mobile only---- */
+/* *----search bar view mobile only---- */
 @media screen and (max-width: 989px) {
     .search__location {
         margin: 2rem auto;
     }
 }
 
-/* ----search bar view desktop only----*/
+/* &----search bar view desktop only----*/
 @media screen and (min-width: 990px) {
     .search__location {
         margin: 1rem 0;
     }
 }
 
-/* filters of search */
+/* filters of search========================= */
 
 .search__filters {
     margin: 1rem 0;
@@ -250,7 +251,7 @@ body {
     font-weight: 700;
 }
 
-/* ----search filters view desktop only----*/
+/* &----search filters view desktop only----*/
 @media screen and (min-width: 990px) {
     .search__filters {
         display: flex;
@@ -260,7 +261,7 @@ body {
     }
 }
 
-/* info of search */
+/* info of search=========================== */
 
 .search__info {
     display: flex;
@@ -287,7 +288,7 @@ body {
     padding-top: 0.25rem;
 }
 
-/* ----container first view desktop only----*/
+/* &----container first view desktop only----*/
 @media screen and (min-width: 990px) {
     .container__first {
         display: flex;
@@ -295,7 +296,7 @@ body {
     }
 }
 
-/* article POPULAR */
+/* article POPULAR======================*/
 
 .wrapper__grey {
     background-color:#F2F2F2;
@@ -308,7 +309,7 @@ body {
     align-items: center;
 }
 
-/* popular cards */
+/* popular cards=========================== */
 
 .popular__card{
     display:flex;
@@ -329,6 +330,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* TODO mettre :nth-child() */
 .popular__picture--1 {
     width: 170%;
 }
@@ -338,6 +340,7 @@ body {
 .popular__picture--3 {
     width: 109%;
 }
+/*TODO ~~~~~~~~~~~~~~~~~~~~~~*/
 
 .popular__card__content {
     width: 55%;
@@ -350,7 +353,7 @@ body {
 .popular__card__rate {
     padding: 2.5em 0 0.5em 0;
 }
-/* ----popular view desktop only----*/
+/* &----popular view desktop only----*/
 @media screen and (min-width: 990px) {
     .wrapper__popular {
         width: 35%;
@@ -372,7 +375,7 @@ body {
     }
 }
 
-/* article ACCOMMODATION */
+/* article ACCOMMODATION====================== */
 
 .accommodation__card {
     display: flex;
@@ -414,7 +417,7 @@ body {
     margin: 1.7rem 0 0.4rem 0.5rem;
     font-size: 1.2rem;
 }
-/* ----accommodation view desktop only----*/
+/* &----accommodation view desktop only----*/
 @media screen and (min-width: 990px) {
     .wrapper__accommodation {
         margin: 1rem;
@@ -428,22 +431,22 @@ body {
     }
     .accommodation__card{
         width: 35%;
-        height: 13vw;
+        height: 14vw;
         margin: 0.5rem;
     }
     .accommodation__card__picture{
-        height: 5rem;
+        height: 60%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
 }
-/* article ACTIVITIES */
+/* article ACTIVITIES======================= */
 
 .activities__card {
     display: flex;
     flex-direction: column;
-    width: 21rem;
-    height: 12.5rem;
+    width: 90vw;
+    height: 30vh;
     padding:0.25rem;
 }
 
@@ -454,6 +457,7 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+/* TODO mettre :nth-child() */
 .activities__picture--1 {
     width: 100%;
     object-position: 0px -21px;
@@ -478,12 +482,40 @@ body {
     width: 100%;
     object-position: 0px -40px;
 }
+/*TODO ~~~~~~~~~~~~~~~~~~~~~~*/
 
 .activities__card__title {
     padding: 1.5rem 0.75rem;
 }
+/* &----activities view desktop only----*/
+@media screen and (min-width: 990px) {
+    .activities__cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* TODO ajuster la height */
+    .activities__cards--solo {
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+    }
+    .activities__card--full{
+        height: 100%;
+    }
+    /*TODO ~~~~~~~~~~~~~~~~~~*/
+    .activities__card {
+        width: 22vw;
+        padding: 0;
+        margin: 2rem 0;
+    }
+    .activities__card__title {
+        margin-left: 1rem;
+    }
+}
 
-/* ----FOOTER---- */
+/* ----FOOTER------------------------------------------ */
 
 footer {
     background-color: #F2F2F2;
@@ -512,8 +544,7 @@ footer {
     padding: 0.25rem 0;
 }
 
-/* ----footer view desktop only----*/
-
+/* &----footer view desktop only----*/
 @media screen and (min-width: 990px) {
     .footer__wrapper {
         display: flex;
