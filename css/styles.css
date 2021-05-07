@@ -130,7 +130,7 @@ body {
 /* &----main view desktop only----*/
 @media screen and (min-width: 990px) {
     main {
-        padding: 0 1rem;
+        padding: 0 1vw;
     }
     .card__title{
         font-size: 1.3vw;
@@ -146,15 +146,15 @@ body {
     align-items: center;
     border: 1px solid #F2F2F2;
     border-radius: 8px;
-    height: 3rem;
-    width: 21rem;
+    height: 7.2vh;
+    width: 90vw;
 }
 
 .search__location__logo {
     background-color: #F2F2F2;
     padding: 5px;
-    height: 3rem;
-    width: 3rem;
+    height: 7.2vh;
+    width: 12.8vw;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     border-color: transparent;
@@ -165,22 +165,23 @@ body {
     border-right: none;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
-    height: 3rem;
-    width: auto;
-    padding-right: 3rem;
+    height: 7.2vh;
+    width: 59.4vw;
+    padding-left: 5vw;
+    padding-right: 0;
 }
 
 .search__location__input::placeholder {
     font-weight: 700;
-    font-size:large;
+    font-size: 2.8vh;
     color:black;
 }
 
 .search__location__button {
     border: none;
     background-color: #0065FC;
-    height: 3rem;
-    width: 3rem;
+    height: 7.2vh;
+    width: 12.8vw;
     color: white;
     border-radius: 8px;
 }
