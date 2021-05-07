@@ -59,7 +59,7 @@ body {
     .header {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 3fr 2fr 1fr;
+        grid-template-columns: 1fr 3fr 2fr 97px;
         margin: 0 1rem;
     }
     .header__top {
