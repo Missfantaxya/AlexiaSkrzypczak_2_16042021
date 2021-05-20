@@ -27,11 +27,11 @@
             <a class="header__subscription bold" href="#">S&apos;inscrire</a>
         </div>
         <nav class="header__nav">
-            <a class="header__nav__link--active nav__link" href="#accommodation">
-                Hébergements
+            <a class="nav__link--active nav__link" href="#accommodation">
+                <p class="nav__item">Hébergements</p>
             </a>
-            <a class="header__nav__link nav__link" href="#activities">
-                Activités
+            <a class="nav__link" href="#activities">
+                <p class="nav__item">Activités</p>
             </a>
         </nav>
     </header>
@@ -47,8 +47,11 @@
                     </button>
                     <input type="text" id="location" class="search__location__input" name="city"
                         placeholder="Marseille, France" required>
-                    <button class="search__location__button">
+                    <button class="search__location__button search__location__button--icon">
                         <i class=" fas fa-search fa-lg"></i>
+                    </button>
+                    <button class="search__location__button search__location__button--text">
+                        Rechercher
                     </button>
                 </div>
                 <section class="search__filters">

@@ -20,29 +20,6 @@ body {
 }
 
 .header__subscription{
-    text-align: center;
-    color: #0065FC;
-}
-
-/* navigation==================== */
-
-.header__nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    width: 100%
-}
-
-.nav__link {
-    width: 50%;
-    text-align: center;
-    padding: 2vh 3.4vw;
-    margin: 0 2px;
-    border-bottom: 3px solid #F2F2F2;
-}
-
-.header__nav__link--active {
-    border-bottom: 3px solid #0065FC;
     color: #0065FC;
 }
 
@@ -53,8 +30,49 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 3fr 2fr 97px;
         margin: 0 1.5vw;
-        align-items: stretch;
     }
+}
+
+/* navigation==================== */
+
+.header__nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.nav__link {
+    width: 50%;
+    margin: 0 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__link--active {
+    color: #0065FC;
+}
+
+.nav__item{
+    height: min-content;
+    margin: auto;
+}
+
+/* *----search bar view mobile only---- */
+@media screen and (max-width: 989px) {
+    .header__nav {
+        width: 100%
+    }
+    .nav__link {
+        padding: 2vh 3.4vw;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .nav__link--active {
+        border-bottom: 3px solid #0065FC;
+    }
+}
+
+/* &----nav view desktop only----*/
+@media screen and (min-width: 990px) {
     .header__top {
         grid-column-start: 1;
         grid-column-end: 5;
@@ -65,15 +83,13 @@ body {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 1;
-        grid-row-end: 2;
+         grid-row-end: 2;
     }
     .nav__link {
-        border: none;
+        border-bottom: none;
         border-top: 3px solid transparent;
-        padding-top: 3.9vh;
-        padding-bottom: 0;
     }
-    .header__nav__link--active {
+    .nav__link--active {
         border-top-color: #0065FC;
     }
 }
@@ -118,7 +134,7 @@ body {
     font-weight: 800;
 }
 
-/* *----search bar view mobile only---- */
+/* *----main view mobile only---- */
 @media screen and (max-width: 989px) {
     .card__title{
         font-size: 5vw;
@@ -143,15 +159,11 @@ body {
     align-items: center;
     border: 1px solid #F2F2F2;
     border-radius: 8px;
-    height: 7.2vh;
-    width: 95vw;
+    position: relative;
 }
 
 .search__location__logo {
     background-color: #F2F2F2;
-    height: 7.2vh;
-    width: 7.2vh;
-    margin-right: 2rem;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     border-color: transparent;
@@ -162,40 +174,84 @@ body {
     border-right: none;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
-    height: 7.2vh;
-    width: 70%;
 }
 
 .search__location__input::placeholder {
     font-weight: 700;
-    font-size: 2.8vh;
     color:black;
-    text-align: left;
+    border-color: transparent;
 }
 
 .search__location__button {
     border: none;
     background-color: #0065FC;
-    height: 7.2vh;
-    width: 15%;
+    height: 100%;
     color: white;
-    border-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: absolute;
+    right: 0;
 }
 
 /* *----search bar view mobile only---- */
 @media screen and (max-width: 989px) {
     .search__location {
-        margin-top: 4.8vh;
+        margin: 4.8vh auto 0 auto;
+        height: 7.2vh;
+        width: 95vw;
+        
+    }
+    .search__location__logo {
+        background-color: #F2F2F2;
+        height: 7.2vh;
+        width: 7.2vh;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        max-width: 465px;
+    }
+    .search__location__input {
+        height: 7.2vh;
+        padding-left: 2rem;
+        width:70%;
+    }
+    .search__location__input::placeholder {
+        font-size: 2.8vh;
+    }
+    .search__location__button--icon {
+        height: 7.2vh;
+        width: 7.2vh;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .search__location__button--text{
+        display: none;
     }
 }
 
 /* &----search bar view desktop only----*/
- /* TODO modifier le bouton de recherches*/
 @media screen and (min-width: 990px) {
     .search__location {
         margin-top: 2vh;
         margin-bottom: 2vh;
-        width: 25%;
+        min-width: 265px;
+        width: 33vw;
+        height: 2.5rem;
+    }
+    .search__location__logo {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .search__location__input {
+        border: none;
+        padding-left: 5%;
+    }
+    .search__location__button--icon {
+        display: none;
+    }
+    .search__location__button--text{
+        width: auto;
+        height: 100%;
+        padding: 0.8rem;
     }
 }
 
