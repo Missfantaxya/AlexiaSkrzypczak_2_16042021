@@ -25,7 +25,7 @@ body {
 }
 
 /* &----nav view desktop only----*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     .header {
         display: grid;
         grid-template-rows: 1fr;
@@ -59,7 +59,7 @@ body {
 }
 
 /* *----search bar view mobile only---- */
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 700px) {
     .header__nav {
         width: 100%
     }
@@ -73,7 +73,7 @@ body {
 }
 
 /* &----nav view desktop only----*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     .header__top {
         grid-column-start: 1;
         grid-column-end: 5;
@@ -111,10 +111,22 @@ body {
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 6px #F2F2F2, -5px -5px 6px #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0.25rem;
 }
 
 .main__card__picture {
     overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.main__card__content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:18vw;
 }
 
 .rate__star{
@@ -130,13 +142,18 @@ body {
 }
 
 /* *----main view mobile only---- */
-@media screen and (max-width: 989px) {
-    .main__card {
-        margin: 0.7vh auto;
-    }
+@media screen and (max-width: 700px) {
     .main__article__title {
         font-size: 7vw;
         padding: 2vh 0;
+    }
+    .main__card {
+        margin: 0.7vh auto;
+        width: 90vw;
+        height: 50vw;
+    }
+    .main__card__picture {
+        height: 32vw;
     }
     .card__title{
         font-size: 1.5rem;
@@ -144,7 +161,7 @@ body {
 }
 
 /* &----main view desktop only----*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     main {
         padding: 0 1vw;
     }
@@ -200,7 +217,7 @@ body {
 }
 
 /* *----search bar view mobile only---- */
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 700px) {
     .search__location {
         margin: 4.8vh auto 0 auto;
         height: 7.2vh;
@@ -235,7 +252,7 @@ body {
 }
 
 /* &----search bar view desktop only----*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     .search__location {
         margin-top: 2vh;
         margin-bottom: 2vh;
@@ -305,14 +322,14 @@ body {
 }
 
 /* *----search bar view mobile only---- */
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 700px) {
     .search__filters__choices {
         margin-left: 3.2vw;
     }
 }
 
 /* &----search filters view desktop only----*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     .search__filters {
         display: flex;
         flex-direction: row;
@@ -364,7 +381,7 @@ body {
 /* container first=========================== */
 
 /* &----container first view desktop only----*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     .container__first {
         display: flex;
         flex-direction: row-reverse;
@@ -416,31 +433,30 @@ body {
 }
 /*TODO ~~~~~~~~~~~~~~~~~~~~~~*/
 
-.popular__card__content {
+.popular__card__content{
     width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* *----search bar view mobile only---- */
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 700px) {
     .popular__card{
-        height: 20vh;
-        margin: 5rem auto;
+        height: 40vw;
+        margin: 2vh auto;
     }
     .popular__card__title {
         margin: 1rem 0;
+        font-size: 4.8vw;
     }
-
     .popular__card__price {
-        margin: 1rem 0;
-    }
-
-    .popular__card__rate {
-        padding: 1rem 0 0.2rem 0.5rem;
     }
 }
 
 /* &----popular view desktop only----*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     .article__popular {
         width: 35%;
         border-radius: 18px;
@@ -457,36 +473,15 @@ body {
     .popular__picture{
         height: 100%;
     }
-    .popular__card__content{
-        height: 100%;
-        padding: 0.25rem 0;
-    }
-    /* TODO voir pkoi le padding remonte et dépasse du content au lieu de descendre le contenu*/
-    .popular__card__title {
-        padding-top: 0.8rem;
-    }
-    .popular__card__rate {
-       
+    .popular__card__price {
+        padding-top: 0.7vw;
     }
 }
 
 /* article ACCOMMODATION====================== */
 
-.article__accommodation {
-    height: auto;
-}
-
-.accommodation__card {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    height: 30vh;
-    padding:0.25rem;
-}
-
 .accommodation__card__picture {
     width:100%;
-    height: 20vh;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -501,18 +496,7 @@ body {
 
 .accommodation__card__content {
     padding: 0.25rem 0.5rem;
-}
-
-.accommodation__card__title {
-    padding-top: 2%;
-}
-
-.accommodation__card__price {
-    padding-top: 2%;
-}
-
-.accommodation__card__rate {
-    padding-top: 3%;
+    justify-content: space-around;
 }
 
 /* TODO pkoi le padding s'applique en remontant sur la card*/
@@ -522,7 +506,7 @@ body {
 }
 /* &----accommodation view desktop only----*/
 /* TODO mettre un shadow sur les cartes*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     .article__accommodation {
         margin: 1rem;
         background-color: #F2F2F2;
@@ -548,20 +532,8 @@ body {
 }
 /* article ACTIVITIES======================= */
 
-.activities__card {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    height: 30vh;
-    padding:0.25rem;
-}
-
 .activities__card__picture {
     width:100%;
-    height: 25vh;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 /* TODO mettre :nth-child() */
 .activities__picture--1 {
@@ -569,6 +541,8 @@ body {
     object-position: 0px -21px;
 }
 .activities__picture--2 {
+    /*TODO régler la taille*/
+    width: 200%;
     object-fit: none;
     object-position: 0px -182px;
 }
@@ -593,8 +567,13 @@ body {
 .activities__card__title {
     padding: 1.5rem 0.75rem;
 }
+
+/* *----activities card view mobile only---- */
+@media screen and (max-width: 700px) {
+}
+
 /* &----activities view desktop only----*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     .activities__cards {
         display: flex;
         flex-direction: row;
@@ -639,8 +618,6 @@ body {
     }
     .activities__card__title {
         margin-left: 1rem;
-    }
-    .activities__card__title {
         padding: 0;
     }
 }
@@ -675,7 +652,7 @@ footer {
 }
 
 /* &----footer view desktop only----*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
     .footer__wrapper {
         display: flex;
         flex-direction: row;
