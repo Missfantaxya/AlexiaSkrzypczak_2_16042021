@@ -679,7 +679,8 @@ footer {
     .footer__wrapper {
         display: flex;
         flex-direction: row;
-
+        justify-content: space-evenly;
+        margin-right: 25%;
     }
     .footer__article {
         margin: 1rem 
