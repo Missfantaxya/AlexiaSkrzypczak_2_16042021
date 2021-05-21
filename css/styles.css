@@ -4,6 +4,18 @@ body {
     width: 100%;
     font-size: 0.9em;
 }
+/* *----layout view mobile only---- */
+@media screen and (max-width: 700px) {
+    .gutter {
+        padding: 1.4vh 4vw;
+    }
+}
+/* &----layout view desktop only----*/
+@media screen and (min-width: 1025px) {
+    .gutter {
+        padding: 1.4vh 1.7vw;
+    }
+}
 
 /* ----HEADER---------------------------- */
  /* TODO le mettre en position fix ?? */
@@ -15,7 +27,6 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding: 1.4vh 1.5vw;
     align-items: center;
     width:100%;
 }
@@ -24,7 +35,7 @@ body {
     color: #0065FC;
 }
 
-/* &----nav view desktop only----*/
+/* &----header view desktop only----*/
 @media screen and (min-width: 1025px) {
     .header {
         display: grid;
@@ -39,7 +50,7 @@ body {
 .header__nav {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav__link {
@@ -58,7 +69,7 @@ body {
     margin: auto;
 }
 
-/* *----search bar view mobile only---- */
+/* *----nav view mobile only---- */
 @media screen and (max-width: 700px) {
     .header__nav {
         width: 100%
@@ -97,14 +108,11 @@ body {
 
 /* ----MAIN------------------------------------------- */
 
-.main__article {
-    padding: 2.9vh 1vw;
-}
-
 .main__cards{
     display: flex;
     flex-direction: column;
-    margin: auto auto;
+    align-items: stretch;
+    justify-content: space-around;
 }
 
 .main__card {
@@ -122,11 +130,11 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 .main__card__content{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height:18vw;
 }
 
 .rate__star{
@@ -144,19 +152,22 @@ body {
 /* *----main view mobile only---- */
 @media screen and (max-width: 700px) {
     .main__article__title {
-        font-size: 7vw;
+        font-size: 5.8vw;
         padding: 2vh 0;
     }
     .main__card {
         margin: 0.7vh auto;
-        width: 90vw;
         height: 50vw;
     }
     .main__card__picture {
         height: 32vw;
     }
+    .main__card__content{
+        height:18vw;
+        font-size: 3vw;
+    }
     .card__title{
-        font-size: 1.5rem;
+        font-size: 4vw;
     }
 }
 
@@ -174,8 +185,7 @@ body {
     }
 }
 
-/* search bar======================== */
-
+/* search ======================== */
 .search__location {
     display: flex;
     flex-flow: row nowrap;
@@ -219,10 +229,10 @@ body {
 /* *----search bar view mobile only---- */
 @media screen and (max-width: 700px) {
     .search__location {
-        margin: 4.8vh auto 0 auto;
+        margin-top: 4.8vh;
         height: 7.2vh;
-        width: 95vw;
-        
+        width: 100%;
+        max-width: 400px;
     }
     .search__location__logo {
         background-color: #F2F2F2;
@@ -321,7 +331,7 @@ body {
     font-weight: 700;
 }
 
-/* *----search bar view mobile only---- */
+/* *----search filter view mobile only---- */
 @media screen and (max-width: 700px) {
     .search__filters__choices {
         margin-left: 3.2vw;
@@ -401,14 +411,11 @@ body {
     align-items: center;
 }
 
-/* popular cards=========================== */
-
 .popular__card{
     display:flex;
     flex-flow: row nowrap;
     align-items: center;
     padding: 0.25rem;
-    width: 95%;
 }
 
 .popular__card__picture {
@@ -416,6 +423,8 @@ body {
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     margin-right: 4%;
     display: flex;
     justify-content: center;
@@ -441,17 +450,14 @@ body {
     justify-content: space-around;
 }
 
-/* *----search bar view mobile only---- */
+/* *----popular card view mobile only---- */
 @media screen and (max-width: 700px) {
     .popular__card{
         height: 40vw;
-        margin: 2vh auto;
     }
     .popular__card__title {
         margin: 1rem 0;
         font-size: 4.8vw;
-    }
-    .popular__card__price {
     }
 }
 
@@ -499,11 +505,21 @@ body {
     justify-content: space-around;
 }
 
-/* TODO pkoi le padding s'applique en remontant sur la card*/
-.accommodation__more {
-    padding-top: 1rem;
-    font-size: 2.7vh;
+/* *----accommodation view mobile only---- */
+@media screen and (max-width: 700px) {
+    .article__accommodation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .accommodation__card{
+        margin: 2vw auto;
+    }
+    .accommodation__more {
+        font-size: 3vw;
+    }
 }
+
 /* &----accommodation view desktop only----*/
 /* TODO mettre un shadow sur les cartes*/
 @media screen and (min-width: 1025px) {
@@ -531,7 +547,7 @@ body {
     }
 }
 /* article ACTIVITIES======================= */
-
+/* TODO vérifier le shadow*/
 .activities__card__picture {
     width:100%;
 }
@@ -568,8 +584,11 @@ body {
     padding: 1.5rem 0.75rem;
 }
 
-/* *----activities card view mobile only---- */
+/* *----activities view mobile only---- */
 @media screen and (max-width: 700px) {
+    .activities__card{
+        margin: 4vw;
+    }
 }
 
 /* &----activities view desktop only----*/
