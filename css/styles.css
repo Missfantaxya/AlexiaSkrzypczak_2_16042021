@@ -134,14 +134,28 @@ body {
 .main__card__content{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;align-items: stretch;
 }
 
+.card__rate  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-star;
+    align-items: center;
+    width: max-content;
+}
+
+/* TODO réglé les différences d'espacement des étoiles selon les types de cartes*/
 .rate__star{
+    height: 2.5vw;
+    width: 2.5vw;
+} 
+
+.star--full{
     color: #0065FC;
 }
 
-.rate__star--empty{
+.star--empty{
     color: #F2F2F2;
 }
 
@@ -414,12 +428,13 @@ body {
 .popular__card{
     display:flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
     padding: 0.25rem;
 }
 
 .popular__card__picture {
-    width: 37%;
+    width: 40%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -435,7 +450,7 @@ body {
     width: 170%;
 }
 .popular__picture--2 {
-    width: 150%;
+    width: 200%;
 }
 .popular__picture--3 {
     width: 109%;
@@ -443,11 +458,12 @@ body {
 /*TODO ~~~~~~~~~~~~~~~~~~~~~~*/
 
 .popular__card__content{
-    width: 55%;
     height: 100%;
+    width:60%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: stretch;
 }
 
 /* *----popular card view mobile only---- */
@@ -458,6 +474,10 @@ body {
     .popular__card__title {
         margin: 1rem 0;
         font-size: 4.8vw;
+    }
+    .popular__card__price {
+        padding-top: 2vw;
+        font-size: 3vw;
     }
 }
 
@@ -502,6 +522,9 @@ body {
 
 .accommodation__card__content {
     padding: 0.25rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: space-around;
 }
 
