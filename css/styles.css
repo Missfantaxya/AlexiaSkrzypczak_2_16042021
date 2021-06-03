@@ -306,21 +306,22 @@ body {
     .search__location {
         margin-top: 4.8vh;
         height: 7.2vh;
+        min-height: 46px;
         width: 100%;
         max-width: 400px;
     }
 
     .search__location__logo {
         background-color: #F2F2F2;
-        height: 7.2vh;
-        width: 7.2vh;
+        height: 100%;
+        width: 15%;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
-        max-width: 465px;
+        max-width: 50px;
     }
 
     .search__location__input {
-        height: 7.2vh;
+        height: 100%;
         padding-left: 2rem;
         width: 70%;
     }
@@ -330,8 +331,9 @@ body {
     }
 
     .search__location__button--icon {
-        height: 7.2vh;
-        width: 7.2vh;
+        height: 100%;
+        width: 15%;
+        max-width: 50px;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
     }
@@ -349,7 +351,7 @@ body {
 
     .search__location {
         width: 50%;
-        height: 2rem;
+        height: 5vw;
         margin: 2rem auto;
     }
 
