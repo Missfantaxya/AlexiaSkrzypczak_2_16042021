@@ -642,6 +642,7 @@ body {
         padding: 0;
         width: 22vw;
         height: 15vw;
+        margin: 1.8vw;
     }
     .activities__card--spread {
         height: 100%;
