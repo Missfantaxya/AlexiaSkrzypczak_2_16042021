@@ -95,6 +95,7 @@ body {
     .nav__link {
         padding: 2vh 3.4vw;
         background-color: #F2F2F2;
+        border: none;
     }
 
     .nav__link--active {
