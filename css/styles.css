@@ -332,8 +332,8 @@ body {
 
     .search__location__button {
         width: 15%;
-    } 
-    
+    }
+
     .search__location__button--icon {
         height: 100%;
         width: 100%;
@@ -367,6 +367,10 @@ body {
 
     .search__location__input {
         border: none;
+    }
+    
+    .search__location__button--icon {
+        display: none;
     }
 }
 
