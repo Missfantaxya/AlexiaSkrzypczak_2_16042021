@@ -95,14 +95,15 @@ body {
     .nav__link {
         padding: 2vh 3.4vw;
         background-color: #F2F2F2;
-        border: none;
+        border-bottom-color: transparent;
     }
 
     .nav__link--active {
         color: white;
         font-weight: 700;
+        /* validator css :  border-color et background-color même couleur  */
         background-color: #0065FC;
-        border: none;
+        border-color: transparent;
     }
 }
 
