@@ -792,10 +792,14 @@ body {
         object-position: 0px -100px;
     }
 
-    .accommodation__more {
-        font-size: 3vw;
-    }
+    .accommodation__card__content{
+        height: 40%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
 
+    }
+    
     .accommodation__more {
         font-size: 1.2vw;
     }
