@@ -330,9 +330,13 @@ body {
         font-size: 2.8vh;
     }
 
+    .search__location__button {
+        width: 15%;
+    } 
+    
     .search__location__button--icon {
         height: 100%;
-        width: 15%;
+        width: 100%;
         max-width: 50px;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
@@ -792,14 +796,14 @@ body {
         object-position: 0px -100px;
     }
 
-    .accommodation__card__content{
+    .accommodation__card__content {
         height: 40%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
 
     }
-    
+
     .accommodation__more {
         font-size: 1.2vw;
     }
