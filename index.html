@@ -42,21 +42,21 @@
     </header>
     <main>
         <div class="wrapper gutter">
-            <article class="main__article search">
+            <section class="main__article search">
                 <h2 class="search__title main__article__title bold">Trouver votre hébergement pour des vacances de rêve
                 </h2>
                 <p class="search__content">En plein centre ville ou en pleine nature</p>
-                <div class="search__location">
-                    <button class="search__location__logo">
+                <form class="search__location">
+                    <button type="button" class="search__location__logo">
                         <i class="fas fa-map-marker-alt fa-lg"></i>
                     </button>
-                    <input type="text" id="location" class="search__location__input" name="city"
+                    <input type="search" id="location" class="search__location__input" name="city"
                         placeholder="Marseille, France" required>
-                    <button class="search__location__button">
-                        <p class="search__location__button--text">Rechercher</p>
+                    <button type="submit" class="search__location__button">
+                        <span class="search__location__button--text">Rechercher</span>
                         <i class="fas fa-search fa-lg search__location__button--icon"></i>
                     </button>
-                </div>
+                </form>
                 <section class="search__filters">
                     <h3 class="search__filters__title">Filtres</h3>
                     <div class="search__filters__choices">
@@ -95,7 +95,7 @@
                     <p class="search__info__content">Plus de 500 logements sont disponibles dans cette ville
                     </p>
                 </div>
-            </article>
+            </section>
         </div>
         <div class="container__first">
             <article class="main__article article__popular wrapper__grey gutter">
