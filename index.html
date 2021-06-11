@@ -17,6 +17,10 @@
     <!--local styles-->
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
+<!--  TODO carte hebergement ou activité cliquable dans son intégralité -->
+<!-- // TODO champs de saisie pour le champs de recherche -->
+<!-- // TODO liens "Hébergement" et "Activités" sont des ancres -->
+<!-- TODO compatibilité dernière version chrom et firefox -->
 
 <body>
     <header class="header">
@@ -92,25 +96,24 @@
                 </div>
             </article>
         </div>
+        <!-- TODO ajusté les class et leur noms avec les balises -->
         <div class="container__first">
-            <article class="main__article article__popular wrapper__grey gutter">
+            <section class="main__article article__popular wrapper__grey gutter">
                 <div class="popular__header">
                     <h2 class="popular__title main__article__title bold">Les plus populaires</h2>
                     <i class="fas fa-chart-line fa-lg"></i>
                 </div>
                 <div class="main__cards popular__cards">
-                    <section class="popular__card main__card">
+                    <a href=# class="popular__card main__card">
                         <p class="popular__card__picture main__card__picture">
                             <img src="./images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre verte"
                                 class="main__picture--large popular__picture popular__picture--1">
                         </p>
                         <div class="popular__card__content">
                             <div class="popular__card__info">
-                                <a href="#" class=" bold popular__card__title card__title">
-                                    <h3>
+                                    <h3 class=" bold popular__card__title card__title">
                                         H&ocirc;tel Le soleil du matin
                                     </h3>
-                                </a>
                                 <p class="popular__card__price">Nuit à partir de 128<span class="bold">&euro;</span></p>
                             </div>
                             <div class="card__rate popular__card__rate">
@@ -121,8 +124,8 @@
                                 <i class="fas fa-star rate__star star--full"></i>
                             </div>
                         </div>
-                    </section>
-                    <section class="popular__card main__card">
+                    </a>
+                    <a class="popular__card main__card">
                         <p class="popular__card__picture main__card__picture">
                             <img src="./images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre grise et beige"
                                 class="main__picture--large popular__picture popular__picture--2">
@@ -144,8 +147,8 @@
                                 <i class="fas fa-star rate__star star--empty"></i>
                             </div>
                         </div>
-                    </section>
-                    <section class="popular__card main__card">
+                    </a>
+                    <a class="popular__card main__card">
                         <p class="popular__card__picture main__card__picture">
                             <img src="./images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre blanche et bois"
                                 class="main__picture--hight popular__picture popular__picture--3">
@@ -168,9 +171,9 @@
                                 <i class="fas fa-star rate__star star--empty"></i>
                             </div>
                         </div>
-                    </section>
+                    </a>
                 </div>
-            </article>
+            </section>
             <article id="accommodation" class="main__article article__accommodation gutter">
                 <h2 class="accommodation__title main__article__title bold">Hébergements à Marseille</h2>
                 <div class="accommodation__cards main__cards">
