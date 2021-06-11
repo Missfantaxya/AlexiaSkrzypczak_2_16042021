@@ -16,21 +16,15 @@ body {
 }
 
 /* ~----layout view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
-    .gutter {
-        padding: 1.4vh 1.7vw;
-    }
-}
-
 /* &----layout view desktop only----*/
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 701px) {
     .gutter {
         padding: 1.4vh 1.7vw;
     }
 }
 
 /* ----HEADER---------------------------- */
-/* TODO le mettre en position fix ?? */
+/*  ?? le mettre en position fix ?? */
 .header {
     margin-bottom: 2.1vh;
 }
@@ -97,8 +91,8 @@ body {
 @media screen and (min-width: 701px) and (max-width: 1024px) {
     .nav__link {
         padding: 2vh 3.4vw;
+        border-bottom: transparent;
         background-color: #F2F2F2;
-        border: none;
     }
 
     .nav__link--active {
@@ -288,9 +282,10 @@ body {
 }
 
 .search__location__input {
-    border: none;
-    /* border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2; */
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 .search__location__input::placeholder {
