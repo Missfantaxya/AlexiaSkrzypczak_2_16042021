@@ -91,7 +91,7 @@ body {
 @media screen and (min-width: 701px) and (max-width: 1024px) {
     .nav__link {
         padding: 2vh 3.4vw;
-        border-bottom: transparent;
+        border-bottom-color: transparent;
         background-color: #F2F2F2;
     }
 
@@ -99,8 +99,9 @@ body {
         color: white;
         font-weight: 700;
         /* validator css :  border-color et background-color même couleur  */
+        border-top-color: transparent;
         background-color: #0065FC;
-        border: none;
+        border-bottom: none;
     }
 }
 
@@ -126,6 +127,7 @@ body {
     }
 
     .nav__link--active {
+        background-color: transparent;
         border-top-color: #0065FC;
     }
 }
