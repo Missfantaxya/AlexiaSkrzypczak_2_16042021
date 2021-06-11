@@ -6,14 +6,14 @@ body {
 }
 
 /* *----layout view mobile only---- */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .gutter {
         padding: 1.4vh 4vw;
     }
 }
 
 /* ~----layout view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .gutter {
         padding: 1.4vh 1.7vw;
     }
@@ -79,7 +79,7 @@ body {
 }
 
 /* *----nav view mobile only---- */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .nav__link {
         padding: 2vh 3.4vw;
         border-bottom: 3px solid #F2F2F2;
@@ -91,19 +91,19 @@ body {
 }
 
 /* ~----nav view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .nav__link {
         padding: 2vh 3.4vw;
         background-color: #F2F2F2;
-        border-bottom-color: transparent;
+        border: none;
     }
 
     .nav__link--active {
         color: white;
         font-weight: 700;
-        /* validator css :  border-color et background-color même couleur  */
+        /* ! validator css :  border-color et background-color même couleur  */
         background-color: #0065FC;
-        border-color: transparent;
+        border: none;
     }
 }
 
@@ -197,7 +197,7 @@ body {
 }
 
 /* *----main view mobile only---- */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .main__article__title {
         font-size: 5.8vw;
         padding: 2vh 0;
@@ -224,7 +224,7 @@ body {
 
 
 /* ~----main view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .main__cards {
         display: flex;
         flex-flow: row wrap;
@@ -308,7 +308,7 @@ body {
 }
 
 /* *----search view mobile only---- */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .search__location {
         margin-top: 4.8vh;
         height: 7.2vh;
@@ -354,7 +354,7 @@ body {
 }
 
 /* ~----search view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .search__title {
         font-size: 1.2rem;
     }
@@ -455,14 +455,14 @@ body {
 }
 
 /* *----search filter view mobile only---- */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .search__filters__choices {
         margin-left: 3.2vw;
     }
 }
 
 /* ~----search filters view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .search__filters__choices {
         flex-flow: row nowrap;
     }
@@ -573,7 +573,7 @@ body {
 }
 
 /* *----popular view mobile only---- */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .popular__card {
         height: 40vw;
     }
@@ -590,7 +590,7 @@ body {
 }
 
 /* ~----popular view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .popular__cards {
         display: flex;
         flex-flow: row wrap;
@@ -665,7 +665,7 @@ body {
 
 
 /* *----accommodation view mobile only---- */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .article__accommodation {
         display: flex;
         flex-direction: column;
@@ -711,7 +711,7 @@ body {
 }
 
 /* ~----accommodation view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .accommodation__card__picture {
         height: 35vw;
         border-top-left-radius: 15px;
@@ -835,7 +835,7 @@ body {
 }
 
 /* *----activities view mobile only---- */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .activities__card {
         margin: 4vw;
     }
@@ -866,7 +866,7 @@ body {
 }
 
 /* ~----activities view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .activities__cards {
         flex-flow: column wrap;
         justify-content: center;
@@ -1060,7 +1060,7 @@ footer {
 
 /* ~----footer view touch pad----*/
 /* &----footer view desktop----*/
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 768px) {
     .footer__wrapper {
         display: flex;
         flex-direction: row;
