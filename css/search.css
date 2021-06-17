@@ -1,5 +1,3 @@
-/* TODO hover des filtres de recherche */
-
 /* search mobile first */
 .search__location {
   display: flex;
@@ -34,8 +32,6 @@
   font-size: 1.2rem;
 }
 
-/* TODO
- ! placeholder gris sur Mozilla */
 .search__location__input::placeholder {
   font-weight: 700;
   color: black;
@@ -132,6 +128,10 @@
   position: relative;
 }
 
+.search__filters__category:hover {
+  border: 3px double #0065FC;
+}
+
 .search__filters__circle {
   display: flex;
   justify-content: center;
@@ -146,6 +146,11 @@
   left: 0;
 }
 
+.search__filters__category:hover .search__filters__circle {
+  border: 3px double #0065FC;
+  border-left: none;
+}
+
 .search__filters__label {
   margin: 0.5rem 0.85rem 0.5rem 0.7rem;
   font-weight: 700;
@@ -157,6 +162,7 @@
     flex-flow: row nowrap;
   }
 }
+
 /* &----search filters desktop----*/
 @media screen and (min-width: 1025px) {
   .search__filters {
