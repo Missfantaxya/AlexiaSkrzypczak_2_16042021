@@ -15,6 +15,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0.25rem;
+  width: 90vw;
 }
 
 .main__card__picture {
@@ -57,13 +58,9 @@
   color: #F2F2F2;
 }
 
-/* *----main view mobile only---- */
-@media screen and (max-width: 700px) {
-  .main__article__title {
-    font-size: 5.8vw;
-    padding: 2vh 0;
-  }
 
+/* *----main mobile only---- */
+@media screen and (max-width: 700px) {
   .main__card {
     margin: 0.7vh auto;
     height: 50vw;
@@ -87,7 +84,6 @@
 /* ~----main view touch pad only---- */
 @media screen and (min-width: 701px) and (max-width: 1024px) {
   .main__cards {
-    display: flex;
     flex-flow: row wrap;
     margin-bottom: 1.2rem;
   }
@@ -101,36 +97,20 @@
   .card__title {
     font-size: 1rem;
   }
-
-  .main__article__title {
-    font-size: 1.5rem;
-    padding: 2vh 0;
-  }
 }
 
-/* &----main view desktop only----*/
+/* &----main desktop ----*/
 @media screen and (min-width: 1025px) {
   main {
     padding: 0 1vw;
   }
 
-  .main__article__title {
-    font-size: 2vw;
-    padding: 2vh 0;
+  .container__first {
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   .card__title {
     font-size: 1.3vw;
   }
 }
-
-/* container first=========================== */
-
-/* &----container first view desktop only----*/
-@media screen and (min-width: 1025px) {
-  .container__first {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-}
-

@@ -1,5 +1,5 @@
 /* ----HEADER---------------------------- */
-/*  ?? le mettre en position fix ?? */
+
 .header {
   margin-bottom: 2.1vh;
 }
@@ -10,10 +10,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-.header__subscription {
-  color: #0065FC;
 }
 
 /* &----header view desktop only----*/
@@ -73,14 +69,14 @@
   .nav__link--active {
     color: white;
     font-weight: 700;
-    /* validator css :  border-color et background-color même couleur  */
+    /* //TODO validator css :  border-color et background-color même couleur  */
     border-top-color: transparent;
     background-color: #0065FC;
     border-bottom: none;
   }
 }
 
-/* &----nav view desktop only----*/
+/* &----nav view desktop----*/
 @media screen and (min-width: 1025px) {
   .header__top {
     grid-column-start: 1;

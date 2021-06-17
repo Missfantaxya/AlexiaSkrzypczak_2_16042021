@@ -1,6 +1,6 @@
 /* TODO vérifier les bold selon les vues */
 /* TODO responsive mobile, tablette et desktop */
-
+/* *----mobile first---- */
 body {
     font-family: 'Raleway', sans-serif;
     width: 100%;
@@ -15,17 +15,37 @@ body {
     font-weight: 800;
 }
 
-/* *----layout view mobile only---- */
-@media screen and (max-width: 700px) {
-    .gutter {
-        padding: 1.4vh 4vw;
-    }
+.blue {
+    color: #0065FC;
 }
 
-/* ~----layout view touch pad only---- */
-/* &----layout view desktop only----*/
+.gutter {
+    padding: 1.4vh 4vw;
+}
+
+.title {
+    font-size: 5.8vw;
+    padding: 2vh 0;
+}
+
+
+/* ~----view touch pad---- */
 @media screen and (min-width: 701px) {
     .gutter {
         padding: 1.4vh 1.7vw;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        padding: 2vh 0;
+    }
+}
+
+/* &----view desktop----*/
+@media screen and (min-width: 1025px) {
+
+    .title {
+        font-size: 2vw;
+        padding: 2vh 0;
     }
 }
