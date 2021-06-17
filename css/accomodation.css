@@ -43,6 +43,8 @@
 }
 
 .accommodation__picture--6 {
+  width: 100%;
+  height: auto;
   object-position: 0px -185px;
 }
 
@@ -79,6 +81,10 @@
   .accommodation__picture--6 {
     object-position: 0px -150px;
   }
+
+  .accommodation__more {
+    font-size: 1.2vw;
+  }
 }
 
 /* &----accommodation view desktop only----*/
@@ -110,17 +116,19 @@
   }
 
   .accommodation__picture--1 {
-
+    width: 110%;
+    height: auto;
     object-position: -10px -37px;
   }
 
   .accommodation__picture--2 {
-    width: 110%;
-    object-position: 0px -50px;
+    object-position: 0px -30px;
   }
 
   .accommodation__picture--3 {
-    object-position: 0px -30px;
+    width: 100%;
+    height: auto;
+    object-position: 0px -40px;
   }
 
   .accommodation__picture--4 {
@@ -128,22 +136,21 @@
   }
 
   .accommodation__picture--5 {
-    object-position: 0px 0px;
+    width: 100%;
+    height: auto;
+    object-position: -5px -15px;
   }
 
   .accommodation__picture--6 {
-    object-position: 0px -100px;
+    width: 100%;
+    height: auto;
+    object-position: 0px -170px;
   }
 
   .accommodation__card__content {
-    height: 40%;
+    height: 5vw;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
-
-  }
-
-  .accommodation__more {
-    font-size: 1.2vw;
+    justify-content: space-between;
   }
 }
