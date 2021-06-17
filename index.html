@@ -16,20 +16,22 @@
         rel="stylesheet">
     <!--local styles-->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="stylesheet" href="./css/cards.css" />
+    <link rel="stylesheet" href="./css/popular.css" />
+    <link rel="stylesheet" href="./css/accomodation.css" />
+    <link rel="stylesheet" href="./css/activities.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 </head>
-<!--  TODO carte hebergement ou activité cliquable dans son intégralité -->
-<!-- // TODO champs de saisie pour le champs de recherche -->
-<!-- // TODO liens "Hébergement" et "Activités" sont des ancres -->
-<!-- TODO compatibilité dernière version chrom et firefox -->
-<!-- TODO ajusté les class et leur noms avec les balises -->
 
 <body>
     <header class="header">
         <div class="header__top gutter">
-            <h1 class="header__logo">
+            <h1>
                 <img src="./images/Reservia.svg" alt="logo Reservia">
             </h1>
-            <a class="header__subscription bold" href="#">S&apos;inscrire</a>
+            <a class="blue bold" href="#">S&apos;inscrire</a>
         </div>
         <nav class="header__nav">
             <a class="nav__link--active nav__link" href="#accommodation">
@@ -41,11 +43,11 @@
         </nav>
     </header>
     <main>
-        <div class="wrapper gutter">
-            <section class="main__article search">
-                <h2 class="search__title main__article__title bold">Trouver votre hébergement pour des vacances de rêve
+        <div class="gutter">
+            <section>
+                <h2 class="title bold">Trouver votre hébergement pour des vacances de rêve
                 </h2>
-                <p class="search__content">En plein centre ville ou en pleine nature</p>
+                <p>En plein centre ville ou en pleine nature</p>
                 <form class="search__location">
                     <button type="button" class="search__location__logo">
                         <i class="fas fa-map-marker-alt fa-lg"></i>
@@ -114,294 +116,284 @@
             </section>
         </div>
         <div class="container__first">
-            <section class="main__article article__popular wrapper__grey gutter">
+            <section class="section__popular wrapper__grey gutter">
                 <div class="popular__header">
-                    <h2 class="popular__title main__article__title bold">Les plus populaires</h2>
+                    <h2 class="popular__title title bold">Les plus populaires</h2>
                     <i class="fas fa-chart-line fa-lg"></i>
                 </div>
                 <div class="main__cards popular__cards">
-                    <section class="popular__card main__card">
-                        <p class="popular__card__picture main__card__picture">
-                            <img src="./images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre verte"
-                                class="main__picture--large popular__picture popular__picture--1">
-                        </p>
-                        <div class="popular__card__content">
-                            <div class="popular__card__info">
-                                <a href="#" class=" bold popular__card__title card__title">
-                                    <h3>
+                    <a href="#">
+                        <section class="popular__card main__card">
+                            <p class="popular__card__picture main__card__picture">
+                                <img src="./images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre verte"
+                                    class="main__picture--large popular__picture popular__picture--1">
+                            </p>
+                            <div class="popular__card__content">
+                                <div class="popular__card__info">
+                                    <h3 class=" bold popular__card__title card__title">
                                         H&ocirc;tel Le soleil du matin
                                     </h3>
-                                </a>
-                                <p class="popular__card__price">Nuit à partir de 128<span class="bold">&euro;</span></p>
+                                    <p class="popular__card__price">Nuit à partir de 128<span class="bold">&euro;</span></p>
+                                </div>
+                                <div class="card__rate popular__card__rate">
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                </div>
                             </div>
-                            <div class="card__rate popular__card__rate">
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section class="popular__card main__card">
+                            <p class="popular__card__picture main__card__picture">
+                                <img src="./images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre grise et beige"
+                                    class="main__picture--large popular__picture popular__picture--2">
+                            </p>
+                            <div class="popular__card__content">
+                                <div class="popular__card__info">
+                                        <h3 class="bold popular__card__title card__title">
+                                            Au c&oelig;ur de l&apos;eau Chambres d&apos;h&ocirc;tes
+                                        </h3>
+                                    <p class="popular__card__price">Nuit à partir de 71<span class="bold">&euro;</span></p>
+                                </div>
+                                <div class="card__rate popular__card__rate">
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--empty"></i>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="popular__card main__card">
-                        <p class="popular__card__picture main__card__picture">
-                            <img src="./images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre grise et beige"
-                                class="main__picture--large popular__picture popular__picture--2">
-                        </p>
-                        <div class="popular__card__content">
-                            <div class="popular__card__info">
-                                <a href="#" class="bold popular__card__title card__title">
-                                    <h3>
-                                        Au c&oelig;ur de l&apos;eau Chambres d&apos;h&ocirc;tes
-                                    </h3>
-                                </a>
-                                <p class="popular__card__price">Nuit à partir de 71<span class="bold">&euro;</span></p>
+                        </section>
+                    </a>
+                    <a href=>
+                        <section class="popular__card main__card">
+                            <p class="popular__card__picture main__card__picture">
+                                <img src="./images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre blanche et bois"
+                                    class="main__picture--hight popular__picture popular__picture--3">
+                            </p>
+                            <div class="popular__card__content">
+                                <div class="popular__card__info">
+                                        <h3 class="bold popular__card__title card__title">
+                                            H&ocirc;tel Tout bleu et
+                                            Blanc
+                                        </h3>
+                                    <p class="popular__card__price">Nuit à partir de 68<span class="bold">&euro;</span></p>
+                                </div>
+                                <div class="card__rate popular__card__rate">
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--empty"></i>
+                                </div>
                             </div>
-                            <div class="card__rate popular__card__rate">
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--empty"></i>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="popular__card main__card">
-                        <p class="popular__card__picture main__card__picture">
-                            <img src="./images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre blanche et bois"
-                                class="main__picture--hight popular__picture popular__picture--3">
-                        </p>
-                        <div class="popular__card__content">
-                            <div class="popular__card__info">
-                                <a href="#" class="bold popular__card__title card__title">
-                                    <h3>
-                                        H&ocirc;tel Tout bleu et
-                                        Blanc
-                                    </h3>
-                                </a>
-                                <p class="popular__card__price">Nuit à partir de 68<span class="bold">&euro;</span></p>
-                            </div>
-                            <div class="card__rate popular__card__rate">
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--empty"></i>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
+                    </a>
                 </div>
             </section>
-            <article id="accommodation" class="main__article article__accommodation gutter">
-                <h2 class="accommodation__title main__article__title bold">Hébergements à Marseille</h2>
+            <section id="accommodation" class="section__accommodation gutter">
+                <h2 class="accommodation__title title bold">Hébergements à Marseille</h2>
                 <div class="accommodation__cards main__cards">
-                    <section class="accommodation__card main__card">
-                        <p class="accommodation__card__picture main__card__picture">
-                            <img src="./images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre avec lit superposé"
-                                class="main__picture--large accommodation__picture accommodation__picture--1">
-                        </p>
-                        <div class="main__card__content accommodation__card__content">
-                            <a href="#" class="bold accommodation__card__title card__title">
-                                <h3>Auberge la Cannebière</h3>
-                            </a>
-                            <p class="accommodation__card__price">Nuit à partir de
-                                <span class="bold">
-                                    25&euro;
-                                </span>
+                    <a href="#">
+                        <section class="accommodation__card main__card">
+                            <p class="accommodation__card__picture main__card__picture">
+                                <img src="./images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre avec lit superposé"
+                                    class="main__picture--large accommodation__picture accommodation__picture--1">
                             </p>
-                            <div class="card__rate accommodation__card__rate">
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--empty"></i>
+                            <div class="main__card__content accommodation__card__content">
+                                    <h3 class="bold accommodation__card__title card__title">Auberge la Cannebière</h3>
+                                <p class="accommodation__card__price">Nuit à partir de
+                                    <span class="bold">
+                                        25&euro;
+                                    </span>
+                                </p>
+                                <div class="card__rate accommodation__card__rate">
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--empty"></i>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="accommodation__card main__card">
-                        <p class="accommodation__card__picture main__card__picture">
-                            <img src="./images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre grise avec deux lits simples"
-                                class="main__picture--large accommodation__picture accommodation__picture--2">
-                        </p>
-                        <div class="main__card__content accommodation__card__content">
-                            <a href="#" class="bold accommodation__card__title card__title">
-                                <h3>H&ocirc;tel du port</h3>
-                            </a>
-                            <p class="accommodation__card__price">Nuit à partir de 52<span class="bold">&euro;</span>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section class="accommodation__card main__card">
+                            <p class="accommodation__card__picture main__card__picture">
+                                <img src="./images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre grise avec deux lits simples"
+                                    class="main__picture--large accommodation__picture accommodation__picture--2">
                             </p>
-                            <div class="card__rate accommodation__card__rate">
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
+                            <div class="main__card__content accommodation__card__content">
+                                    <h3 class="bold accommodation__card__title card__title">H&ocirc;tel du port</h3>
+                                <p class="accommodation__card__price">Nuit à partir de 52<span class="bold">&euro;</span>
+                                </p>
+                                <div class="card__rate accommodation__card__rate">
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="accommodation__card main__card">
-                        <p class="accommodation__card__picture main__card__picture">
-                            <img src="./images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre avec placard"
-                                class="main__picture--large accommodation__picture accommodation__picture--3">
-                        </p>
-                        <div class="main__card__content accommodation__card__content">
-                            <a href="#" class="bold accommodation__card__title card__title">
-                                <h3>H&ocirc;tel Les mouettes</h3>
-                            </a>
-                            <p class="accommodation__card__price">Nuit à partir de 76<span class="bold">&euro;</span>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section class="accommodation__card main__card">
+                            <p class="accommodation__card__picture main__card__picture">
+                                <img src="./images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre avec placard"
+                                    class="main__picture--large accommodation__picture accommodation__picture--3">
                             </p>
-                            <div class="card__rate accommodation__card__rate">
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--empty"></i>
+                            <div class="main__card__content accommodation__card__content">
+                                    <h3 class="bold accommodation__card__title card__title">H&ocirc;tel Les mouettes</h3>
+                                <p class="accommodation__card__price">Nuit à partir de 76<span class="bold">&euro;</span>
+                                </p>
+                                <div class="card__rate accommodation__card__rate">
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--empty"></i>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="accommodation__card main__card">
-                        <p class="accommodation__card__picture main__card__picture accommodation__picture--4">
-                            <img src="./images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre thème maritime"
-                                class="main__picture--large accommodation__picture--4 accommodation__picture">
-                        </p>
-                        <div class="main__card__content accommodation__card__content">
-                            <a href="#" class="bold accommodation__card__title card__title">
-                                <h3>H&ocirc;tel de la mer</h3>
-                            </a>
-                            <p class="accommodation__card__price">Nuit à partir de 46<span class="bold">&euro;</span>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section class="accommodation__card main__card">
+                            <p class="accommodation__card__picture main__card__picture accommodation__picture--4">
+                                <img src="./images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre thème maritime"
+                                    class="main__picture--large accommodation__picture--4 accommodation__picture">
                             </p>
-                            <div class="card__rate accommodation__card__rate">
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--empty"></i>
-                                <i class="fas fa-star rate__star star--empty"></i>
+                            <div class="main__card__content accommodation__card__content">
+                                    <h3 class="bold accommodation__card__title card__title">H&ocirc;tel de la mer</h3>
+                                <p class="accommodation__card__price">Nuit à partir de 46<span class="bold">&euro;</span>
+                                </p>
+                                <div class="card__rate accommodation__card__rate">
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--empty"></i>
+                                    <i class="fas fa-star rate__star star--empty"></i>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="accommodation__card main__card">
-                        <p class="accommodation__card__picture main__card__picture">
-                            <img src="./images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                                alt="chambre avec lits superposés rustique" class="main__picture--large accommodation__picture accommodation__picture--5 ">
-                        </p>
-                        <div class="main__card__content accommodation__card__content">
-                            <a href="#" class="bold accommodation__card__title card__title">
-                                <h3>Auberge Le panier</h3>
-                            </a>
-                            <p class="accommodation__card__price">Nuit à partir de 23<span class="bold">&euro;</span>
+                        </section>
+                    </a>
+                    <a href="#" >
+                        <section class="accommodation__card main__card">
+                            <p class="accommodation__card__picture main__card__picture">
+                                <img src="./images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                    alt="chambre avec lits superposés rustique" class="main__picture--large accommodation__picture accommodation__picture--5 ">
                             </p>
-                            <div class="card__rate accommodation__card__rate">
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--empty"></i>
+                            <div class="main__card__content accommodation__card__content">
+                                    <h3 class="bold accommodation__card__title card__title">Auberge Le panier</h3>
+                                <p class="accommodation__card__price">Nuit à partir de 23<span class="bold">&euro;</span>
+                                </p>
+                                <div class="card__rate accommodation__card__rate">
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--empty"></i>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="accommodation__card main__card">
-                        <p class="accommodation__card__picture main__card__picture">
-                            <img src="./images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre avec deux lits simples et un bureau"
-                                class="main__picture--hight accommodation__picture accommodation__picture--6">
-                        </p>
-                        <div class="main__card__content accommodation__card__content accommodation__picture--6">
-                            <a href="#" class="bold accommodation__card__title card__title">
-                                <h3>H&ocirc;tel chez Amina</h3>
-                            </a>
-                            <p class="accommodation__card__price">Nuit à partir de 96<span class="bold">&euro;</span>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section class="accommodation__card main__card">
+                            <p class="accommodation__card__picture main__card__picture">
+                                <img src="./images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre avec deux lits simples et un bureau"
+                                    class="main__picture--hight accommodation__picture accommodation__picture--6">
                             </p>
-                            <div class="card__rate accommodation__card__rate">
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
-                                <i class="fas fa-star rate__star star--full"></i>
+                            <div class="main__card__content accommodation__card__content accommodation__picture--6">
+                                <h3 class="bold accommodation__card__title card__title">H&ocirc;tel chez Amina</h3>
+                                <p class="accommodation__card__price">Nuit à partir de 96<span class="bold">&euro;</span>
+                                </p>
+                                <div class="card__rate accommodation__card__rate">
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                    <i class="fas fa-star rate__star star--full"></i>
+                                </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+                    </a>
                 </div>
                 <a href="#" class="accommodation__more bold">Afficher plus</a>
-            </article>
+            </section>
         </div>
-        <article id="activities" class="main__article article__activities gutter">
-            <h2 class="activities__title main__article__title bold">Activités à Marseille</h2>
+        <section id="activities" class="gutter">
+            <h2 class="activities__title title bold">Activités à Marseille</h2>
             <div class="activities__cards main__cards">
                 <div class="activities__cards--solo">
-                    <section class="activities__card activities__card--spread main__card">
+                    <a href="#" class="activities__card activities__card--spread main__card">
                         <p class="activities__card__picture activities__card__picture--spread main__card__picture">
                             <img src="./images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port de Marseille"
                                 class="main__picture--large activities__picture activities__picture--1">
                         </p>
                         <div class="main__card__content activities__card__content">
-                            <a href="#" class="bold activities__card__title card__title">
-                                <h3>Vieux port</h3>
-                            </a>
+                                <h3  class="bold activities__card__title card__title">Vieux port</h3>
                         </div>
-                    </section>
+                    </a>
                 </div>
                 <div class="activities__cards--duo">
-                    <section class="activities__card main__card activities__card--2">
+                    <a href="#" class="activities__card main__card activities__card--2">
                         <p class="activities__card__picture main__card__picture">
                             <img src="./images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomègues"
                                 class="main__picture--hight activities__picture activities__picture--2">
                         </p>
                         <div class="main__card__content activities__card__content">
-                            <a href="#" class="bold activities__card__title card__title">
-                                <h3>Fort de Pomègues</h3>
-                            </a>
+                                <h3 class="bold activities__card__title card__title">Fort de Pomègues</h3>
                         </div>
-                    </section>
-                    <section class="activities__card main__card activities__card--3">
+                    </a>
+                    <a href="#" class="activities__card main__card activities__card--3">
                         <p class="activities__card__picture main__card__picture">
                             <img src="./images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="un île du frioul"
                                 class="main__picture--large activities__picture activities__picture--3">
                         </p>
                         <div class="main__card__content activities__card__content">
-                            <a href="#" class="bold activities__card__title card__title">
-                                <h3>&Icirc;les du Frioul</h3>
-                            </a>
+                                <h3 class="bold activities__card__title card__title">&Icirc;les du Frioul</h3>
                         </div>
-                    </section>
+                    </a>
                 </div>
                 <div class="activities__cards--solo">
-                    <section class="activities__card activities__card--spread main__card">
+                    <a href="#" class="activities__card activities__card--spread main__card">
                         <p class="activities__card__picture activities__card__picture--spread main__card__picture">
                             <img src="./images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="vue d'une calanque"
                                 class="main__picture--large activities__picture activities__picture--4">
                         </p>
                         <div class="main__card__content activities__card__content">
-                            <a href="#" class="bold activities__card__title card__title">
-                                <h3>Parc National des Calanques</h3>
-                            </a>
+                                <h3 class="bold activities__card__title card__title">Parc National des Calanques</h3>
                         </div>
-                    </section>
+                    </a>
                 </div>
                 <div class="activities__cards--duo">
-                    <section class="activities__card main__card">
+                    <a href="#" class="activities__card main__card">
                         <p class="activities__card__picture main__card__picture activities__picture--5">
                             <img src="./images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                                 alt="Notre-Dame-de-la-Garde et sa colline"
                                 class="main__picture--large activities__picture activities__picture--5">
                         </p>
                         <div class="main__card__content activities__card__content">
-                            <a href="#" class="bold activities__card__title card__title">
-                                <h3>Notre-Dame-de-la-Garde</h3>
-                            </a>
+                                <h3 class="bold activities__card__title card__title">Notre-Dame-de-la-Garde</h3>
                         </div>
-                    </section>
-                    <section class="activities__card main__card">
-                        <p class="activities__card__picture main__card__picture">
-                            <img src="./images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="monument du parc longchamp"
-                                class="main__picture--large activities__picture activities__picture--6">
-                        </p>
-                        <div class="main__card__content activities__card__content">
-                            <a href="#" class="bold activities__card__title card__title">
-                                <h3>Parc Longchamp</h3>
-                            </a>
-                        </div>
-                    </section>
+                    </a>
+                    <a href="#">
+                        <section class="activities__card main__card">
+                            <p class="activities__card__picture main__card__picture">
+                                <img src="./images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="monument du parc longchamp"
+                                    class="main__picture--large activities__picture activities__picture--6">
+                            </p>
+                            <div class="main__card__content activities__card__content">
+                                    <h3 class="bold activities__card__title card__title">Parc Longchamp</h3>
+                            </div>
+                        </section>
+                    </a>
                 </div>
             </div>
-        </article>
+        </section>
     </main>
     <footer>
         <div class=" footer__wrapper">

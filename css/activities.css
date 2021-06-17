@@ -1,0 +1,205 @@
+/* actibities mobile first */
+.activities__card__picture {
+  width: 100%;
+}
+
+.activities__picture {
+  width: 100%;
+  height: auto;
+}
+
+.activities__card__title {
+  padding: 1.5rem 0.75rem;
+}
+
+.activities__picture--1 {
+  object-position: 0px -21px;
+}
+
+.activities__picture--2 {
+  object-position: 0px -182px;
+}
+
+.activities__picture--3 {
+  object-position: 0px -26px;
+}
+
+.activities__picture--4 {
+  object-position: 0px -26px;
+}
+
+.activities__picture--5 {
+  object-position: 0px -24px;
+}
+
+.activities__picture--6 {
+  object-position: 0px -40px;
+}
+
+/* ~----activities touch pad---- */
+@media screen and (min-width: 701px) {
+  .activities__cards {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .activities__cards--solo {
+    width: 100%;
+  }
+
+  .activities__cards--duo {
+    width: 100%;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .activities__card {
+    padding: 0;
+    width: 45vw;
+    height: 40vw;
+  }
+
+  .activities__card--spread {
+    width: 100%;
+  }
+
+  .activities__card__picture {
+    height: 35vw;
+  }
+
+  .activities__picture--1 {
+    object-position: 0px -200px;
+  }
+
+  .activities__picture--2 {
+    object-position: 0px -130px;
+  }
+
+  .activities__picture--3 {
+    height: 100%;
+    width: auto;
+    object-position: 0px 0px;
+  }
+
+  .activities__picture--4 {
+    object-position: 0px -160px;
+  }
+
+  .activities__picture--5 {
+    height: 100%;
+    width: auto;
+    object-position: 0px 0px;
+  }
+
+  .activities__picture--6 {
+    object-position: 0px 0px;
+  }
+
+  .activities__card__title {
+    margin-left: 1rem;
+  }
+}
+
+/* &----activities desktop ----*/
+@media screen and (min-width: 1025px) {
+  .activities__cards {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 35vw;
+  }
+
+  .activities__cards--solo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32vw;
+    width: 23vw;
+    padding: 1rem;
+  }
+
+  .activities__cards--duo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 23vW;
+    height: 32vw;
+    padding: 1rem;
+  }
+
+  .activities__card {
+    padding: 0;
+    width: 22vw;
+    height: 14vw;
+    justify-content: flex-start;
+  }
+
+  .activities__card--spread {
+    height: 100%;
+  }
+
+  .activities__card--2 {
+    height: 55%;
+  }
+
+  .activities__card--3 {
+    height: 35%;
+  }
+
+  .activities__card__picture--spread {
+    height: 90%;
+  }
+
+  .activities__picture--1 {
+    height: 125%;
+    width: auto;
+    object-position: -165px -30px;
+  }
+
+  .activities__picture--2 {
+    object-position: 0px -120px;
+  }
+
+  .activities__picture--3 {
+    width: 100%;
+    height: auto;
+    object-position: 0px -40px;
+  }
+
+  .activities__picture--4 {
+    height: 120%;
+    width: auto;
+    object-position: -150px 0px;
+  }
+
+  .activities__picture--5 {
+    width: 100%;
+    height: auto;
+    object-position: 0px -5px;
+  }
+
+  .activities__picture--6 {
+    object-position: 0px -20px;
+  }
+
+  .activities__card__content {
+    height: 2.5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .activities__card__title {
+    margin-left: 1rem;
+    padding: 0;
+  }
+}
