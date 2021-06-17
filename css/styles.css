@@ -16,21 +16,15 @@ body {
 }
 
 /* ~----layout view touch pad only---- */
-@media screen and (min-width: 701px) and (max-width: 1024px) {
-    .gutter {
-        padding: 1.4vh 1.7vw;
-    }
-}
-
 /* &----layout view desktop only----*/
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 701px) {
     .gutter {
         padding: 1.4vh 1.7vw;
     }
 }
 
 /* ----HEADER---------------------------- */
-/* TODO le mettre en position fix ?? */
+/*  ?? le mettre en position fix ?? */
 .header {
     margin-bottom: 2.1vh;
 }
@@ -97,16 +91,17 @@ body {
 @media screen and (min-width: 701px) and (max-width: 1024px) {
     .nav__link {
         padding: 2vh 3.4vw;
+        border-bottom-color: transparent;
         background-color: #F2F2F2;
-        border: none;
     }
 
     .nav__link--active {
         color: white;
         font-weight: 700;
         /* validator css :  border-color et background-color même couleur  */
+        border-top-color: transparent;
         background-color: #0065FC;
-        border: none;
+        border-bottom: none;
     }
 }
 
@@ -132,6 +127,7 @@ body {
     }
 
     .nav__link--active {
+        background-color: transparent;
         border-top-color: #0065FC;
     }
 }
@@ -288,11 +284,13 @@ body {
 }
 
 .search__location__input {
-    border: none;
-    /* border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2; */
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 }
-
+/* TODO
+ ! placeholder gris sur Mozilla */
 .search__location__input::placeholder {
     font-weight: 700;
     color: black;
@@ -441,19 +439,27 @@ body {
     border: 2px solid #F2F2F2;
     border-left: none;
     margin: 1.2vh;
+    padding-left: 3rem;
+    background-color: transparent;
+    position: relative;
 }
 
-.search__filters__button {
+.search__filters__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 50%;
     background-color: #DEEBFF;
     width: 3rem;
     height: 3rem;
     color: #0065FC;
+    position: absolute;
+    left: 0;
 }
 
 .search__filters__label {
-    padding: 0.5rem 0.85rem 0.5rem 0.7rem;
+    margin: 0.5rem 0.85rem 0.5rem 0.7rem;
     font-weight: 700;
 }
 

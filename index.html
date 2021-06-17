@@ -21,6 +21,7 @@
 <!-- // TODO champs de saisie pour le champs de recherche -->
 <!-- // TODO liens "Hébergement" et "Activités" sont des ancres -->
 <!-- TODO compatibilité dernière version chrom et firefox -->
+<!-- TODO ajusté les class et leur noms avec les balises -->
 
 <body>
     <header class="header">
@@ -41,48 +42,64 @@
     </header>
     <main>
         <div class="wrapper gutter">
-            <article class="main__article search">
+            <section class="main__article search">
                 <h2 class="search__title main__article__title bold">Trouver votre hébergement pour des vacances de rêve
                 </h2>
                 <p class="search__content">En plein centre ville ou en pleine nature</p>
-                <div class="search__location">
-                    <button class="search__location__logo">
+                <form class="search__location">
+                    <button type="button" class="search__location__logo">
                         <i class="fas fa-map-marker-alt fa-lg"></i>
                     </button>
-                    <input type="text" id="location" class="search__location__input" name="city"
+                    <input type="search" id="location" class="search__location__input" name="city"
                         placeholder="Marseille, France" required>
-                    <button class="search__location__button">
-                        <p class="search__location__button--text">Rechercher</p>
+                    <button type="submit" class="search__location__button">
+                        <span class="search__location__button--text">Rechercher</span>
                         <i class="fas fa-search fa-lg search__location__button--icon"></i>
                     </button>
-                </div>
+                </form>
                 <section class="search__filters">
                     <h3 class="search__filters__title">Filtres</h3>
                     <div class="search__filters__choices">
-                        <div class="search__filters__category">
-                            <button class="search__filters__button" id="economic">
+                        <button 
+                        type="button" 
+                        id="economic" 
+                        name="economic" 
+                        class="search__filters__category">
+                            <span class="search__filters__circle" >
                                 <i class="fas fa-money-bill-wave fa-lg"></i>
-                            </button>
-                            <label class="search__filters__label" for="economic">&Eacute;conomique</label>
-                        </div>
-                        <div class="search__filters__category">
-                            <button id="family" class="search__filters__button">
+                            </span>
+                            <span class="search__filters__label">&Eacute;conomique</span>
+                        </button>
+                        <button 
+                        type="button" 
+                        name="family" 
+                        class="search__filters__category" 
+                        id="family">
+                            <span class="search__filters__circle">
                                 <i class="fas fa-child fa-lg"></i>
-                            </button>
-                            <label class="search__filters__label" for="family">Familial</label>
-                        </div>
-                        <div class="search__filters__category">
-                            <button id="romantic" class="search__filters__button">
+                            </span>
+                            <span class="search__filters__label">Familial</span>
+                        </button>
+                        <button 
+                        type="button" 
+                        name="romantic" 
+                        class="search__filters__category" 
+                        id="romantic">
+                            <span class="search__filters__circle">
                                 <i class="fas fa-heart fa-lg"></i>
-                            </button>
-                            <label class="search__filters__label" for="romantic">Romantique</label>
-                        </div>
-                        <div class="search__filters__category">
-                            <button id="pets" class="search__filters__button">
+                            </span>
+                            <span class="search__filters__label">Romantique</span>
+                        </button>
+                        <button 
+                        type="button" 
+                        name="pets" 
+                        class="search__filters__category" 
+                        id="pets">
+                            <span class="search__filters__circle">
                                 <i class="fas fa-dog fa-lg"></i>
-                            </button>
-                            <label class="search__filters__label" for="pets">Animaux autorisés</label>
-                        </div>
+                            </span>
+                            <span class="search__filters__label">Animaux autorisés</span>
+                        </button>
                     </div>
                 </section>
                 <div class="search__info">
@@ -94,9 +111,8 @@
                     <p class="search__info__content">Plus de 500 logements sont disponibles dans cette ville
                     </p>
                 </div>
-            </article>
+            </section>
         </div>
-        <!-- TODO ajusté les class et leur noms avec les balises -->
         <div class="container__first">
             <section class="main__article article__popular wrapper__grey gutter">
                 <div class="popular__header">
@@ -104,16 +120,18 @@
                     <i class="fas fa-chart-line fa-lg"></i>
                 </div>
                 <div class="main__cards popular__cards">
-                    <a href=# class="popular__card main__card">
+                    <section class="popular__card main__card">
                         <p class="popular__card__picture main__card__picture">
                             <img src="./images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre verte"
                                 class="main__picture--large popular__picture popular__picture--1">
                         </p>
                         <div class="popular__card__content">
                             <div class="popular__card__info">
-                                    <h3 class=" bold popular__card__title card__title">
+                                <a href="#" class=" bold popular__card__title card__title">
+                                    <h3>
                                         H&ocirc;tel Le soleil du matin
                                     </h3>
+                                </a>
                                 <p class="popular__card__price">Nuit à partir de 128<span class="bold">&euro;</span></p>
                             </div>
                             <div class="card__rate popular__card__rate">
@@ -124,8 +142,8 @@
                                 <i class="fas fa-star rate__star star--full"></i>
                             </div>
                         </div>
-                    </a>
-                    <a class="popular__card main__card">
+                    </section>
+                    <section class="popular__card main__card">
                         <p class="popular__card__picture main__card__picture">
                             <img src="./images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre grise et beige"
                                 class="main__picture--large popular__picture popular__picture--2">
@@ -147,8 +165,8 @@
                                 <i class="fas fa-star rate__star star--empty"></i>
                             </div>
                         </div>
-                    </a>
-                    <a class="popular__card main__card">
+                    </section>
+                    <section class="popular__card main__card">
                         <p class="popular__card__picture main__card__picture">
                             <img src="./images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre blanche et bois"
                                 class="main__picture--hight popular__picture popular__picture--3">
@@ -171,7 +189,7 @@
                                 <i class="fas fa-star rate__star star--empty"></i>
                             </div>
                         </div>
-                    </a>
+                    </section>
                 </div>
             </section>
             <article id="accommodation" class="main__article article__accommodation gutter">
