@@ -1,0 +1,49 @@
+/* ----FOOTER------------------------------------------ */
+
+footer {
+  background-color: #F2F2F2;
+}
+
+.footer__wrapper {
+  margin: 0 1rem;
+  padding: 1rem 0.25rem;
+
+}
+
+.footer__article {
+  padding: 0.75rem 0;
+}
+
+.footer__title {
+  padding: 0.75rem 0;
+  font-weight: 700;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__link {
+  padding: 0.30rem 0;
+}
+
+/* ~----footer view touch pad----*/
+/* &----footer view desktop----*/
+@media screen and (min-width: 701px) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: max-content;
+  }
+
+  .footer__article {
+    margin: 1rem
+  }
+
+  .footer__article:nth-child(2),
+  .footer__article:nth-child(3) {
+    margin-left: 12vw;
+  }
+}

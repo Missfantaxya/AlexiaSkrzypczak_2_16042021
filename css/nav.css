@@ -1,0 +1,271 @@
+/* TODO hover des filtres de recherche */
+
+/* search ======================== */
+.search__location {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  border-radius: 8px;
+  position: relative;
+  /* ajuster la taille pour caché le border sous le boutton */
+  box-sizing: border-box;
+
+}
+
+.search__location__logo {
+  background-color: #F2F2F2;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-color: transparent;
+}
+
+.search__location__input {
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+/* TODO
+ ! placeholder gris sur Mozilla */
+.search__location__input::placeholder {
+  font-weight: 700;
+  color: black;
+  border-color: transparent;
+}
+
+.search__location__button {
+  border: none;
+  background-color: #0065FC;
+  height: 100%;
+  color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  right: 0;
+}
+
+/* *----search view mobile only---- */
+@media screen and (max-width: 700px) {
+  .search__location {
+    margin-top: 4.8vh;
+    height: 7.2vh;
+    min-height: 46px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .search__location__logo {
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 15%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    max-width: 50px;
+  }
+
+  .search__location__input {
+    height: 100%;
+    padding-left: 2rem;
+    width: 70%;
+  }
+
+  .search__location__input::placeholder {
+    font-size: 2.8vh;
+  }
+
+  .search__location__button {
+    width: 15%;
+  }
+
+  .search__location__button--icon {
+    height: 100%;
+    width: 100%;
+    max-width: 50px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .search__location__button--text {
+    display: none;
+  }
+}
+
+/* ~----search view touch pad only---- */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .search__title {
+    font-size: 1.2rem;
+  }
+
+  .search__location {
+    width: 50%;
+    height: 5vw;
+    margin: 2rem auto;
+  }
+
+  .search__location__logo {
+    height: 100%;
+    width: 5vw;
+    margin-right: 1rem;
+  }
+
+  .search__location__input {
+    border: none;
+  }
+
+  .search__location__button--icon {
+    display: none;
+  }
+}
+
+/* &----search view desktop only----*/
+@media screen and (min-width: 1025px) {
+  .search__location {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    min-width: 265px;
+    width: 33vw;
+    max-width: 355px;
+    height: 2.5rem;
+  }
+
+  .search__location__logo {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .search__location__input {
+    border: none;
+    padding-left: 5%;
+    font-size: 1.2rem;
+  }
+
+  .search__location__button--icon {
+    display: none;
+  }
+
+  .search__location__button--text {
+    width: auto;
+    height: 100%;
+    padding: 0.8rem;
+  }
+}
+
+/* filters of search========================= */
+
+.search__filters {
+  margin: 2.4vh 0;
+}
+
+.search__filters__title {
+  margin: 1.8vh 0;
+  font-weight: 700;
+}
+
+.search__filters__choices {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.search__filters__category {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 3rem;
+  border-radius: 50px;
+  border: 2px solid #F2F2F2;
+  border-left: none;
+  margin: 1.2vh;
+  padding-left: 3rem;
+  background-color: transparent;
+  position: relative;
+}
+
+.search__filters__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #DEEBFF;
+  width: 3rem;
+  height: 3rem;
+  color: #0065FC;
+  position: absolute;
+  left: 0;
+}
+
+.search__filters__label {
+  margin: 0.5rem 0.85rem 0.5rem 0.7rem;
+  font-weight: 700;
+}
+
+/* *----search filter view mobile only---- */
+@media screen and (max-width: 700px) {
+  .search__filters__choices {
+    margin-left: 3.2vw;
+  }
+}
+
+/* ~----search filters view touch pad only---- */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .search__filters__choices {
+    flex-flow: row nowrap;
+  }
+}
+
+/* &----search filters view desktop only----*/
+@media screen and (min-width: 1025px) {
+  .search__filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .search__filters__category {
+    margin: auto 1rem;
+  }
+
+  .search__filters__label {
+    padding: 0.5rem 0.85rem 0.5rem 0.7rem;
+    font-weight: 700;
+  }
+
+  .search__filters__title {
+    font-size: 1.2rem;
+  }
+
+  .search__filters__label {
+    font-size: 1.2rem;
+  }
+
+}
+
+/* info of search=========================== */
+
+.search__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: start;
+}
+
+.search__info__logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #F2F2F2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: start;
+  margin: 0 0.5rem;
+  color: #0065FC;
+}
+
+.search__info__content {
+  padding-top: 0.6vh;
+}

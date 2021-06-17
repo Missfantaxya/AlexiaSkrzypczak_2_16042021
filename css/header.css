@@ -1,0 +1,108 @@
+/* ----HEADER---------------------------- */
+/*  ?? le mettre en position fix ?? */
+.header {
+  margin-bottom: 2.1vh;
+}
+
+.header__top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__subscription {
+  color: #0065FC;
+}
+
+/* &----header view desktop only----*/
+@media screen and (min-width: 1025px) {
+  .header {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 2fr 97px;
+    margin: 0 1.5vw;
+  }
+}
+
+/* navigation==================== */
+
+.header__nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.nav__link {
+  width: 50%;
+  margin: 0 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__link--active {
+  color: #0065FC;
+}
+
+.nav__item {
+  height: min-content;
+  margin: auto;
+}
+
+/* *----nav view mobile only---- */
+@media screen and (max-width: 700px) {
+  .nav__link {
+    padding: 2vh 3.4vw;
+    border-bottom: 3px solid #F2F2F2;
+  }
+
+  .nav__link--active {
+    border-bottom: 3px solid #0065FC;
+  }
+}
+
+/* ~----nav view touch pad only---- */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .nav__link {
+    padding: 2vh 3.4vw;
+    border-bottom-color: transparent;
+    background-color: #F2F2F2;
+  }
+
+  .nav__link--active {
+    color: white;
+    font-weight: 700;
+    /* validator css :  border-color et background-color même couleur  */
+    border-top-color: transparent;
+    background-color: #0065FC;
+    border-bottom: none;
+  }
+}
+
+/* &----nav view desktop only----*/
+@media screen and (min-width: 1025px) {
+  .header__top {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .header__nav {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .nav__link {
+    border-bottom: none;
+    border-top: 3px solid transparent;
+  }
+
+  .nav__link--active {
+    background-color: transparent;
+    border-top-color: #0065FC;
+  }
+}

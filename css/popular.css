@@ -1,0 +1,104 @@
+/* article POPULAR======================*/
+
+.popular__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular__card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.popular__card__picture {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-right: 4%;
+  display: flex;
+}
+
+.popular__card__content {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* *----popular view mobile only---- */
+@media screen and (max-width: 700px) {
+  .popular__card {
+    height: 40vw;
+  }
+
+  .popular__card__title {
+    margin: 1rem 0;
+    font-size: 4.8vw;
+  }
+
+  .popular__card__price {
+    padding-top: 2vw;
+    font-size: 3vw;
+  }
+}
+
+/* ~----popular view touch pad only---- */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .popular__cards {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .popular__card {
+    margin: 0.5rem;
+    width: 45vw;
+    height: 18vh;
+  }
+
+  .popular__card__info {
+    height: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+  }
+
+  .popular__card__picture {
+    width: 20vw;
+  }
+}
+
+/* &----popular view desktop only----*/
+@media screen and (min-width: 1025px) {
+  .popular__cards {
+    display: block;
+  }
+
+  .article__popular {
+    width: 35%;
+    border-radius: 18px;
+    margin: 1rem
+  }
+
+  .popular__card {
+    width: 90%;
+    height: 10vw;
+    margin: 2vh auto;
+  }
+
+  .popular__card__picture {
+    height: 100%;
+  }
+
+  .popular__card__price {
+    padding-top: 0.7vw;
+  }
+}

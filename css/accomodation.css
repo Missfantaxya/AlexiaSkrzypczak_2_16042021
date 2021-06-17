@@ -1,0 +1,172 @@
+/* article ACCOMMODATION====================== */
+
+.accommodation__card__picture {
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.accommodation__card__content {
+  padding: 0.25rem 0.5rem;
+}
+
+.accommodation__picture {
+  width: 100%;
+  height: auto;
+}
+
+
+/* *----accommodation view mobile only---- */
+@media screen and (max-width: 700px) {
+  .article__accommodation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .accommodation__card {
+    width: 90vw;
+    margin: 2vw auto;
+  }
+
+  .accommodation__card__picture {
+    height: 35vw;
+  }
+
+  .accommodation__picture--1 {
+    object-position: 0px -50px;
+  }
+
+  .accommodation__picture--2 {
+    object-position: 0px -50px;
+  }
+
+  .accommodation__picture--3 {
+    object-position: 0px -50px;
+  }
+
+  .accommodation__picture--4 {
+    object-position: 0px -98px;
+  }
+
+  .accommodation__picture--5 {
+    object-position: 0px -30px;
+  }
+
+  .accommodation__picture--6 {
+    object-position: 0px -185px;
+  }
+
+  .accommodation__more {
+    font-size: 3vw;
+  }
+}
+
+/* ~----accommodation view touch pad only---- */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .accommodation__card__picture {
+    height: 35vw;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .accommodation__picture--1 {
+    object-position: 0px 0px;
+  }
+
+  .accommodation__picture--2 {
+    object-position: 0px 0px;
+  }
+
+  .accommodation__picture--3 {
+    height: 100%;
+    width: auto;
+    object-position: 0px 0px;
+  }
+
+  .accommodation__picture--4 {
+    object-position: 0px -50px;
+  }
+
+  .accommodation__picture--5 {
+    height: 100%;
+    width: auto;
+    object-position: 0px 0px;
+  }
+
+  .accommodation__picture--6 {
+    object-position: 0px -150px;
+  }
+}
+
+/* &----accommodation view desktop only----*/
+@media screen and (min-width: 1025px) {
+  .article__accommodation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    width: 66%;
+  }
+
+  .accommodation__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .accommodation__card {
+    flex-basis: 30%;
+    height: 14vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .accommodation__card__picture {
+    height: 60%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .accommodation__picture--1 {
+    object-position: 0px 0px;
+  }
+
+  .accommodation__picture--2 {
+    object-position: 0px -50px;
+  }
+
+  .accommodation__picture--3 {
+    object-position: 0px -30px;
+  }
+
+  .accommodation__picture--4 {
+    object-position: 0px -70px;
+  }
+
+  .accommodation__picture--5 {
+    object-position: 0px 0px;
+  }
+
+  .accommodation__picture--6 {
+    object-position: 0px -100px;
+  }
+
+  .accommodation__card__content {
+    height: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+
+  }
+
+  .accommodation__more {
+    font-size: 1.2vw;
+  }
+}
