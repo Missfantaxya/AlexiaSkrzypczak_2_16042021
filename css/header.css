@@ -69,7 +69,6 @@
   .nav__link--active {
     color: white;
     font-weight: 700;
-    /* //TODO validator css :  border-color et background-color même couleur  */
     border-top-color: transparent;
     background-color: #0065FC;
     border-bottom: none;
